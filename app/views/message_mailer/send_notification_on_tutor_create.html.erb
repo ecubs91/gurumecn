@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h3>Hi <%= @tutor_profile.user.first_name %>,</h3>  
+    
+    <h4>Congratulations on becoming a tutor with us.<br>We hope to find students for you in near future.</h4>
+    <p>We would like to suggest the following in order to increase your chance of finding students for you:</p>
+
+    <h3 style="color:#f25842">Request reviews</h3>
+      <p style="color:#757582">Ask your previous students to leave you reviews on your tutor profile at <%= link_to "Request Reviews", invite_for_review_tutor_profiles_path %>. The more reviews you have, the more students there will be that are interested in tuition from you.</p>
+    
+     
+    <!--<h3 style="color:#f25842">Answer 'Questions'</h3>
+    <p style="color:#757582">GuruMe provides a forum where students can post a public question on <%= link_to "Ask a Tutor", questions_url %>. This is your chance to advertise yourself as a knowledgeable and responsive tutor! We kindly encourage you to comment answers to a question in your academic area of expertise</p>-->
+      <h3 style="color:#f25842">Friendly Messaging</h3>
+      <p style="color:#757582">We encourage you to give friendly tips and advice when potential students message you. They have read your profile and are interested in tuition from you and your job is to attract the students to make that request.</p>
+    <br>
+    <p>
+      Your tutor profile can be viewed and edited at <%= link_to "My Tutor Profile", tutor_profile_url(:id => @tutor_profile.id) %> on the menu bar and <br> messages from students at your <%= link_to "Inbox", conversations_url %>.
+    </p>
+    <p>If you have any questions, please do not hesitate to get in touch with us.<br><br>
+    
+      <b>Harry</b></p>
+  </body>
+</html>

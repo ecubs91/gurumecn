@@ -1,0 +1,58 @@
+<div class="container">
+<div class="row">
+  <div class="col-md-2" style="background:#f1f1f1"></div>
+  <div class="col-md-8">
+    <p id="notice"><%= notice %></p>
+    <br>
+    <h2><%= @blog.title %></h2>
+    <div class="row">
+      <div class="col-md-1">
+        
+          <%= link_to tutor_profile_path(@tutor_profile.id) do %>
+          <div class="blogavatar" style = 'background-image: url(<%= @tutor_profile.image.url(:small) rescue 'default.jpg' %>); background-size: 60px; text-align:left'></div>
+          
+          <% end %>
+              
+      </div>
+      <div class="col-md-11">
+        <p> <%= @user.first_name %>, <i><%= @blog.education %></i> <br> <%= @blog.created_at.strftime("%e %b %Y") %></p>
+      </div>
+    </div>
+    <br>
+    <!--<p><%#= h(@blog.content).gsub(/\n/, '<br/>').html_safe %></p>-->
+    <p><%= @blog.content.html_safe %></p>
+    
+    <br>
+    <%= link_to "Write Comment", new_blog_reply_path(@blog), class: "btn btn-primary" %>
+    <br>
+    <% if @replies.blank? %>
+    <% else %>
+      <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+          <% @replies.each do |reply| %>
+            <tr>
+              <td>
+                <h4>
+                  <%= reply.user.first_name %>
+                </h4>     
+                <p style="font-weight: normal;"><%= reply.created_at.strftime("%-m/%-d/%y") %></p>      
+              </td>
+              <td>              
+                <p style="font-weight: normal;"><%= h(reply.comment).gsub(/\n/, '<br/>').html_safe %></p>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>  
+    <% end %>
+
+    <p>
+      <% if current_user == @blog.user %>
+        <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-default" %>
+      <% end %> 
+      <%= link_to 'Back to Blog', blogs_path, class: "btn btn-default" %></p>
+  </div>
+  <div class="col-md-2"></div>
+</div>

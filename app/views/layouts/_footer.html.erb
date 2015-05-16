@@ -1,0 +1,25 @@
+<% unless params[:controller]=="pages" && ["our_stars", "services_for_schools", "free_consultation", "admissions_test", "written_work"].include?(params[:action]) %>
+  <br><br><br>
+<% end %>
+</div><!-- end of container from layout/application -->
+<div class="footer">    
+  <div class="row">
+  <div class="col-md-8 col-md-offset-2">           
+    <p><%= link_to "그루미 소개", pages_about_path %> &nbsp;|&nbsp; <%= link_to "이용방법", pages_how_it_works_path %> &nbsp;|&nbsp; <%= link_to "온라인 수업", pages_online_tuition_path %> &nbsp;|&nbsp; <%= link_to "연락처", contacts_path %></p>
+      <br>
+      </div><!-- end of col-md-8 -->
+  </div>
+  <div class="copyright">
+        <h3>그루미</h3>
+        <p>Copyright © GuruMe All Rights Reserved</p>
+  </div>
+      <!--<div class="fb-like" data-href="http://www.youngtutors.com/" data-layout="box_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
+
+<a href="https://www.facebook.com/pages/GuruMe/1520714664813227" target="_blank" align="left"><img src="https://dl.dropboxusercontent.com/s/8gg3f7uhhb6gkah/FB-f-Logo__blue_50.png" border="0" style="margin:1px; width:40px;"></a>  
+<a href="https://www.youtube.com/channel/UC7CSa0PhSdBPXCGPysSWzCQ" target="_blank" align="left"><img src="https://dl.dropboxusercontent.com/s/sggtg426gxfhtgy/YouTube-social-square_red_48px.png" border="0" style="margin:1px; width:40px;"></a>
+          -->
+
+</div> <!-- end of footer -->
+
+    
+

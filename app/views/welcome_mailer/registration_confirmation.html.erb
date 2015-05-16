@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <style>
+            p {font-size:20px;}
+          </style>
+  <h2><%= @user.first_name %>님 안녕하세요!</h2>          
+      <p>그루미 회원이 되신 걸 환영합니다.<br>이제 세계 명문대학교 출신의 선생님들을 만나보시죠!<br> 
+      우리 모두가 꿈꾸는 명문대 입시 여행을 그루미 선생님들과 함께 시작해봐요^^</p>
+          <p>어떻게 이용하면 되나요? <%= link_to "이용 방법", pages_how_it_works_url, class:"link" %> 알아보기</p>
+    
+    <h3 style="color:#0068C0">무료 자료</h3>
+          <p>일단 입시에 필요한 자료들을 한번 만나 보시죠! <%= link_to "샘플 자기소개서", pages_personal_statements_url, class: "link" %> and <%= link_to "옥스브릿지 인터뷰 문제들", pages_oxbridge_interview_questions_url, class: "link" %></p>
+        <!--
+    <h3 style="color:#f25842">Any questions that need answering?</h3>
+    <p>Ask any question related to academics and university application that will be answered by our subject-specific tutors.</p>
+    -->
+    <h3 style="color:#0068C0">선생님과 맞나보아요</h3>
+    <p>SAT, IB, A-Level 시험을 그리고 대입준비를 성공적으로 치뤘던 현 재학생 선생님들보다 저 잘 좋은 선생님이 있을가요? 지금당장 세계 명문대 재학생들과 만나보시죠!</p>
+   
+    
+     <p>원하시는 선생님이 안계시다구요? 저희 그루미팀에게 알려주시면 빠른시일내에 원하시는 대학 그리고 위치에 맞는 선생님을 찾아드리겠습니다.</p>
+    
+     <p>환영합니다^^
+     <br><br> 
+       <b>그루미 팀</b></p>
+        </div>          
+        </div>
+    </div>
+  </body>
+</html>
