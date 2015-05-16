@@ -1,25 +1,414 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
+  #header
+  Find Tutors: Find Tutors
+  Try Now: Try Now
+  our_services: Our Services
+  about_us: About Us
+  how_it_works: How It Works
+  our_results: Our Results
+  students_parents: Students & Parents
+  services_for_schools: Services For Schools
+  uk_admissions: UK Admissions
+  admissions_facts: Admissions Facts
+  US-UK University Admissions: US-UK University Admissions
+  University Application Experiences: University Application Experiences
+  Scholarship Application: Scholarship Application
+  College Essay: College Essay
+  personal_statement: Personal Statement
+  admissions_test: Admissions Test
+  written_work: Written Work
+  oxbridge_interviews: Oxbridge Interviews
+  Free Resources: Free Resources
+  Personal Statements: Personal Statements
+  Suggested Readings: Suggested Readings
+  Oxbridge Interview Questions: Oxbridge Interview Questions
+  Blogs: Blogs
+  Scholarships: Scholarships
+  
+  My Tutor Profile: My Tutor Profile
+  Request Reviews: Request Reviews
+  My Tuition: My Tuition
+  Inbox: Inbox
+  Account Setting: Account Setting
+  sign_out: Sign Out
+  sign_up: Register
+  sign_in: Sign In
+  
+  #footer
+  GuruMe: GuruMe
+  Become A Tutor: Become A Tutor
+  Referral Scheme: Referral Scheme
+  Online Tuition: Online Tuition
+  Terms and Conditions: Terms and Conditions
+  Contact Us: Contact Us
+  Follow Us: Follow Us
+ 
+  #register/ signin
+  First Name: First Name
+  Last Name: Last Name
+  Email: Email
+  Email Address: Email Address
+  Password: Password
+  Password Confirmation: Password Confirmation
+  leave blank: leave blank if you don't want to change it
+  Current Password: Current Password
+  current password p: we need your current password to confirm your changes
+  Cancel my account: Cancel my account
+  Unhappy?: Unhappy?
+  Remember me: Remember me
+  Forgot your password?: Forgot your password?
+  Edit: Edit
+  
+  #homepage
+  searchboximg html: <img src="/assets/searchboxicon.png" class="searchicon">
+  What subject can we help with?: What subject can we help with? 
+  searchbox p: For students applying to US and UK universities 
+  University Admissions: University Admissions
+  Exam Preparation: Exam Preparation
+  Location: Location
+  Target University: Target University
+  Tuition Subject: Tuition Subject
+  Choose Country: Choose Country
+  Choose City: Choose City
+  Online marketplace that connects students and tutors: Online marketplace that connects students and tutors
+  Search for Tutors index: What is the subject you would like help with AND at what level? You can read about tutors that offer the required help. 
+  Contact Tutors index: You can directly message tutors for FREE. This is for you to get to know your potential tutors better before deciding to have tuition with them.
+  Schedule and start learning: Schedule and start learning
+  Schedule and start learning p: Your tutor is available for your desired tuition dates? Exchange contact details to schedule tuition and start learning!
+  Our Record: Our Record
+  Our Record p: 14 students of ours have received offers from Oxbridge.
+  ourstarsimg html: <img src="/assets/toprighttriangle.png" height="250" class="pull-right"> 
+  tutors index: Quality tutors, check out these reviews
+  Materials for Reference: Materials for Reference
+  Materials for Reference p: Valuable resources compiled by GuruMe tutors because these are what GuruMe tutors would have found useful when they were applicants themselves.
+  Interview Q&A Videos: Interview Q&A Videos
+  Read more: Read more
+  
+  #about us
+  about_quotation: Learn from top students. Pay what you can afford.
+  Who we are: Who we are
+  Who we are p: GuruMe is a network of undergraduates and graduate from top universities. We provide a platform connecting tutors offering academic expertise with students seeking support for university application and exam preparation.
+  Our Team: Our Team
+  Harry Lee: Harry Lee
+  Harry Lee p: Harry began tutoring GCSE and IB students at the age of 17 and enjoys seeing his students achieve academic goals. For this reason, his aim is to improve the way students apply to world renowned institutions and to ultimately make a difference in the study abroad private tutoring industry.
+  Jian Wong: Jian Wong
+  Jian Wong p: Jian began tutoring while taking his IGCSEs at the age of 16. For him, helping students ‘get’ a topic is a very rewarding experience. He has taught a variety of levels including IGCSEs, A Levels as well as English to refugees. Recently, however, he has found himself drawn to helping international students prepare for their Oxbridge applications. His time at Oxford has been amazing and he would gladly help anyone working hard to get in. There is a wealth of experience to be shared on navigating applications. All it needs is the right platform.
+  Arica Chan: Arica Chan
+  Arica Chan p: Arica started her study in the UK since the age of 17. Without studying abroad, Arica would not have thought of studying in Cambridge, a world renowned university. Realising not all the students have the advantage of getting appropriate support from their school, Arica hopes to create more channels for students, especially international students, to improve and to achieve their goal in their future studies.
+  Leslie Ho: Leslie Ho
+  Leslie Ho p: Leslie has a few years of tutoring experience. He also participated in a number of outreach and admissions events which included conferences with pre-university school teachers with the aim of familiarising them with the Oxford admissions process. Believing that additional interview preparation can make a difference, Leslie is dedicated to helping you secure a spot in a desired University.
+  Why us: Why choose us
+  about_circle_1_html: <h3>Affordability</h3><p>Starting from £15/hr</p>
+  about_circle_2_html: <h3>Reviewed Tutors</h3><p>Reviews from previous students</p>
+  about_circle_3_html: <h3>Strong tutor network</h3><p>Network of 100+ tutors in all subjects</p>
+  about_circle_4_html: <h3>Social Enterprise</h3><p>Valuable resources available for free</p>
+  Our Mission: Our Mission
+  Our Mission p: GuruMe was established to make top quality private tutoring more accessible and affordable by sourcing university students who are well educated, dedicated and responsible. Our network of tutors are experts when it comes to the OxBridge application process, and they will guide you to attain a spot in your dream University. They are also well poised to share the footsteps they have taken and offer advice and guidance like a school senior would. Additionally, GuruMe provides a wealth of free resources that we hope you will find useful in your application process.
+ 
+  #how it works
+  Search for Tutors: Search for Tutors
+  Search for Tutors html: <p>What is the subject that you would like to be tutored in?</p><p>Through GuruMe, you can view tutor profiles that undergraduates and graduates from top universities have posted.</p>
+  Search for Tutors footer: Type the subject and tick the levels that you need help with
+  Contact Tutors: Contact Tutors
+  Contact Tutors html: <p>Found the tutor(s) you like?</p>
+        <p>Message your tutor(s) to discuss your needs and set the dates on which you hope to have tuition.</p> 
+        <p>Also, ask any questions you have! Our tutors will strive to respond within 24 hours of your enquiry.</p>
+  Schedule Tuition/ Payment: Schedule Tuition/ Payment
+  Schedule Tuition/ Payment html: 
+        <p>Happy and set with a tutor? Your tutor is available for your desired tuition dates?</p>
+        <li>Complete the 2-step tuition booking</li> 
+        <li>Exchange contact details to schedule tuition</li> 
+        <li>Start learning!</li>
+  Schedule Tuition/ Payment footer: Enter the number of hours for tuition
+  Tuition: Tuition
+  Tuition html: <p>Once tuition is booked and lessons scheduled, it's time to meet your tutor and get down to learning!</p>
+        <li>Prepare and ask questions you do not know the answer to.</li> 
+        <li>Prepare some essays for your tutor to have a look at and ask for areas of improvement.</li>
+  Write a Review: Write a Review
+  Write a Review html: <p>Please share with us your opinion on how useful your tuition was. Your honest reviews will help other students get to know more about our tutors!</p>
+ 
+  #our stars 
+  our stars header: Congratulations to our successful 2014 applicants to Oxbridge
+  Name: Name
+  From: From
+  Offer from: Offer from
+  Offer subject: Offer subject
+  Anonymous: Anonymous
+  Cambridge University: Cambridge University
+  Oxford University: Oxford University
+  Cambridge: Cambridge
+  Oxford: Oxford
+  Imperial College: Imperial College
+  LSE: LSE
+  Princeton: Princeton
+  Stanford: Stanford
+  Pennsylvania: Pennsylvania
+  Beijing: Beijing
+  China: China
+  Hong Kong: Hong Kong
+  Korea: Korea
+  Malaysia: Malaysia
+  Poland: Poland
+  Singapore: Singapore
+  UK: UK
+  
+  Biochemistry: Biochemistry
+  Chemistry: Chemistry
+  Earth Sciences: Earth Sciences
+  Economics: Economics
+  Economics and Management: Economics and Management
+  Engineering: Engineering
+  E&M: E&M
+  Fine Art: Fine Art
+  Geography: Geography
+  Law: Law
+  Mathematics: Mathematics
+  Mathematics and Computer Sciences: Mathematics and Computer Sciences
+  Mathematics and Statistics: Mathematics and Statistics
+  Medicine: Medicine
+  Molecular Biology: Molecular Biology
+  Natural Sciences: Natural Sciences
+  PPE: PPE
+  
+  Maria Review: "Maria was not a tutor - she was a teacher who helped me to take a step further as a student and as a person. Through our sessions, I did not only develop a broader understanding of the subject (Law) but also became more reflective of the significance of the subject and the kind of person I wish to be by studying the subject. This, without any doubt, strengthened my university application in the most significant way and I can not be more thankful that I met her."
+  Maria Student: Kim, Law offer from Oxford University
+  Harry Review: "Harry is a very dedicated tutor. He tried to give me as much time as possible in order to prepare, even when he was abroad! His enthusiasm for the subject rubbed off on me and the questions he provided were well suited to my personal statement as well the specific college I applied to. His wide range of contacts really helped because he has a large bank of questions at hand. Whenever I was on the wrong track, he would guide to the correct answer without telling me the final answer and he always had a follow up question for me."
+  Harry Student: Jei, Biochemistry offer from Oxford University
+  Edmond Review: "Edmond gave me a good understanding of how to prepare for the interview. Mock interviews along with his tips and advise made me more confident of presenting myself on the actual day. If not for meeting Edmond through GuruMe, I would have not known how to go about my preparation."
+  Edmond Student: Lee, Economics offer from Cambridge University
+  Tom Review: "The practice questions given by Tom were top notch. I felt like it gave me a lot more confidence walking into the interview. Some of the questions were so similar to the actual questions that were asked so much so that I think Tom has been a major contributor to my success in getting an offer."
+  Tom Student: Yu, Chemistry offer from Oxford University
+  Holly Review: "She was absolutely amazing! The tutoring was focused on preparing for university entry. She was so patient and encouraging and was always willing to help me whenever I needed her help. She was incredibly knowledgeable, kind, helpful and sincere. I was offered a place and I honestly could not have done it without Holly."
+  Holly Student: Anonymous, Geography offer from Oxford University
+  Rohan Review: "The tuition was conducted in an extremely professional way, with a lot of specific feedback and a thorough analysis of the key points An ideal tutor for an interview!"
+  Rohan Review 2: "The content of Rohan's mock interview was very useful while I was conducting my actual interview. The tips and general advice he gave me was accurate, and gave me a better idea of what to expect going into the interviews than any other source I had looked at online."
+  Rohan Student: Lukasz, E&M offer from Oxford University
+  Luke Review: "The mock interview for PPE offered by Luke was a great help for me - with Oxford-style questions chosen based on past questions and the newest trends in the curriculum, I have come to realise my own strengths and weaknesses, and his suggested readings (especially the part on logic and democracies) are particularly useful. I am much better equipped for the interview now - thank you Luke!"
+  Luke Review index: "The mock interview for PPE offered by Luke was a great help for me - with Oxford-style questions chosen based on past questions and the newest trends in the curriculum, I have come to realise my own strengths and weaknesses, and his suggested readings (especially the part on logic and democracies)..."
+  Luke Student: Tsui, PPE offer from Oxford University
+  Nat Review: "Nathaniel guided me to really think about my works, suggested different approaches and gave me many specific advices. He really knows what the Oxford's tutors are looking for, without his tutions, I wouldn't feel so confident and comfortable in the interviews and practicle test, Thanks so much Nat!"
+  
+  Louis Review: "Louis had been very helpful to me when i was struggling to find a correct route to go about doing medicine for a degree. He had given me a lot of sources and reading materials which would increase my chances of getting a placement for the universities... "
+  Sharon Review: "Sharon is really helpful! She is always there to answer all my questions during my application. The mock interview section is particularly useful. I really enjoy the experience. Many thanks to her!"
+  Kalila Review: "This tutor was very helpful, and catapulted me into a position, in which, I felt confident and prepared for my admissions test. Additionally, the tutor, was very down-to-earth and could easily be reached on skype, despite my geographical location. 5/5 - Thanks!"
+  Lily Review: "Lily helped me with university interview practice. I only had one session, but she proved to be extremely helpful. She structured my interview in the same format as the real thing, asked good questions and gave me lots of useful feedback. She is very prompt to respond if you have any questions... "
+  
+  #students & parents
+  students parents p html: <i>"Find a tutor specific to your needs who studies or has studied the course that you are applying for that can share his/ her successful application/ learning experience”</i>
+  Oxbridge Application Support: Oxbridge Application Support
+  University Q&A: University Q&A
+  University Q&A html: <li>Meet a 'successful senior' that has successfully entered your dream university</li>
+        <li>Ask the senior what he/she did at your age</li>
+  Personal Statement: Personal Statement
+  Personal Statement html: <li>Learn what to include in your personal statement</li>
+        <li>Help with initial drafting followed by several rounds of re-drafting and feedback over email/Skype</li>
+  Admissions Test: Admissions Test
+  Admissions Test html: <li>Problem-solving classes to go through past papers</li>
+        <li>Essay writing classes, e.g. for LNAT</li>      
+  Written Work: Written Work
+  Written Work html: <li>It is critical to choose pieces of written work that showcase your analytical, reasoning and writing skills</li>
+        <li>We can assist in choosing pieces of your work that will leave the best impression on admissions officers</li>
+  Interviews: Interviews
+  Interviews html: <li>Learn what kind of questions to expect at interviews</li>
+        <li>Mock interviews by Oxbridge undergraduates or graduates studying your subject</li>
+  students parents quotation html: <i><h1>In person or online</h1> 
+        <h3>using Skype and Virtual Whiteboard</h3></i>
+        
+  exam prep: Exam Prepataion
+  exam prep p: Conditional offers from Oxford and Cambridge are very high.
+  exam prep p html: <p>GuruMe believes that getting good examination grades is different from being successful in Oxbridge interviews but an important part of the whole process.</p>
+      <p>Therefore, GuruMe supports our applicants with exam preparation as an additional aspect of Oxbridge admissions for meeting the conditional offer.</p>
+  
+  #services for schools
+  Support for International Schools: Support for International Schools
+  Support for International Schools p: GuruMe work closely with schools to supplement their Oxbridge support for students through visits, talks and networking events. International applicants often have very high academic potential and yet their average success rate is comparatively lower (11%) than home applicants (around 20%).
+  Programme: Programme 
+  Programme p: The following have been outlined in an attempt to address the most important aspects of support needed for international student and can be tailored to suit your school’s needs.
+  Oxbridge Aspiration Talk: Oxbridge Aspiration Talk
+  Oxbridge Aspiration Talk p: Our representative will share his/ her own application experience in the hope of demystifying the ‘Oxbridge admissions’ process and encourage students to aim high. Our representative will also deliver an introduction to the admissions process explaining the importance of personal statements, admissions tests and interviews.
+  Networking Event html: <h2>Networking Event</h2>
+        <p>A team of current Oxbridge students or graduates majoring in different courses will visit your school to meet and talk to your students in an informal setting. Your students will meet and talk to course-specific ambassadors for tips and advice in an informal setting.</p>
+        <p>There will be ambassadors originally from your country and parents are welcome to join the networking event.</p>      
+  Skype Mock Interviews html: <h2>Skype Mock Interviews</h2>
+        <p>Interviews are the most important part of the Oxbridge admissions process. Mock interviews are often the best preparation and we will work with your teachers to arrange course-specific Skype mock interviews for your students to be conducted by Oxbridge undergraduates or graduates in those courses.</p>
+        <p>Each interview will be 25 minutes long to model the real interview followed by written feedback.</p>
+  schools footer: To find out more about our school support, please email support@gurume.co.uk       
+  
+  #admissions facts
+  Application Timeline: Application Timeline
+  admissionsfactsbox html: <h2>The Oxbridge admissions process is quite different from the US - it is mostly academic in nature
+      <hr>*Admissions tests and interviews</h2>
+  admissionsfactsquote html: <h3>"It really doesn't matter if you haven't got any friends or hobbies or if you don't do any charitable work ...[Acceptance] is a purely academic judgement."</h3>
+        <h4>- Mr Nicholson, Oxford Admissions Tutors</h4>
+  ucas html: <h3>UCAS</h3><p>*Earlier deadlines for international students sitting Cambridge interviews in their home countries, e.g. Singapore and China</p><p>** For international students, IELTS may be required.</p>
+  
+  cambridge early application html: <h3>Cambridge early application dates</h3><p style="text-decoration:underline">UCAS and COPA by September 20th for </p><p>Chinese applicants seeking interviews in Shanghai (30th -31st  Oct)<br>Singaporean applicants seeking interviews in Singapore (20th – 29th Oct)</p> 
+  conditional offer html: <h3>Conditional offer - <i>not a guarantee</i></h3><p>After interviews, university acceptance might be given on the condition that applicants achieve certain grades at relevant examinations in  summer.</p><p>*Applicants who have obtained required grades before their UCAS application are given unconditional offers after interviews.</p>      
+        
+  #personal statements      
+  personal statement p html: <h1>What is it?</h1>
+      <h3>A 4000 character long summary of why an applicant wishes to study a particular course - <b>not the university</b></h3>.
+  personal statement checklist html: <h1>Checklist</h1>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Show off</h3> <p>This is where you need to demonstrate how much you’ve read around a subject to demonstrate your commitment. Mention any course-related books you have read or theories and concepts you have come across that have piqued your interest. These may provide points of discussion at your interviews. Mention your favourite topics.</p>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Academic Academic Academic...</h3> <p>There should be less emphasis on extracurricular achievements as academic achievements are the primary interest of the university.</p>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Read personal statements of successful applicants</h3> <p>Check out sample personal statements of successful applicants at link and also some subject-specific suggested reading lists at link</p>
+  
+  #admissions test
+  admissions test p html: <h2 style="text-align:center">What is it?</h2>
+       <p>Admissions tests are used by universities to examine applicants’ academic potential beyond their predicted grades from national examinations. These are written by the universities. Some of them are designed to be subject-specific while others are designed to test thinking skills in general.</p>
+       <p>These admissions tests are not only required for Oxbridge but also for other competitive universities, e.g. Durham, Bristol, Imperial, LSE, UCL  etc. and competitive courses such as medicine and law.</p>
+  More about each test html: <i>More about each test</i>      
+  admissions test p2 html: <h2 style="text-align:center">Which subjects require admissions test?</h2>
+      <p>Not all subjects for Oxbridge require admissions tests many of them do.
+        Please find which admissions tests are required for which courses from the links below:</p>
+  admissions test checklist html: <h1>Checklist</h1>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Try past papers available online</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Make sure to register for the tests by their required deadline</h3> 
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Find the testing centre nearest to you</h3>      
+        
+  #written content      
+  Written Content: Written Content      
+  Written Content p: Arts subjects at Oxbridge sometimes require submission of a piece of written work. For these pieces of work, tutors are looking for four specific attributes
+  Written Contet p2: The coursework submitted must thus be taken as a chance to show that you have these skills and attributes. It is not expected that your work is perfect, but these attributes have to be present. These four attributes will be broken down below.
+  Passion: Passion
+  Passion p: Tutors want to see applicants who show genuine interest in the subject. The easiest way to convey this is to demonstrate an interest in your subject that goes beyond your schoolwork. You should demonstrate through your coursework that you have read widely on the topic and gone beyond the syllabus.
+  Knowledge: Knowledge
+  Knowledge p: This is closely linked to passion. Demonstrate that you have read widely on the subject and command a firm grasp of the important issues contained therein. 
+  Analytical ability: Analytical ability
+  Analytical ability p: Analytical skill is the ability to deconstruct, make sense of and utilise given information effectively to quickly identify the issues at stake and the possible resolutions. A common mistake to be avoided is slipping into narrative, where a story rather than an argument is presented. The ability to convey the salient points of an argument in a clear and concise manner is the mark of a good writer.
+  Sophisticated arguments: Sophisticated arguments
+  Sophisticated arguments p: Constructing a sophisticated argument involves being able to consider an issue from multiple angles. There might not be a  ‘right’ answer at all, but it is still important to find a position which you incline towards and can defend in a persuasive manner.
+  Last Notes: Last Notes
+  Last Notes p: The role of the submitted coursework in Oxbridge admissions varies. Some colleges use it to consider whom to invite for interview. Others use it to form the basis of the interview. Because of this, your written coursework should be on a topic that you are ready to discuss with an expert. This means having read widely enough and thought deeply enough on the issues involved so that you can hold your own in an intellectual conversation. Colleges have no real preference between writing a piece of coursework from scratch or using one from existing schoolwork. So long as your work demonstrates your analytical skills and writing ability and covers a topic you are passionate and knowledgeable about, you will do well.
+  
+  #Oxbridge interviews
+  What are interviewers looking for?: What are interviewers looking for?
+  Ability to think: Ability to think
+  interviews quote1: “Interviewers are not necessarily looking for the right answer but one that shows innovative thinking”
+  Admissions Tutor: Admissions Tutor
+  Head of Undergraduate Admissions: Head of Undergraduate Admissions
+  interviews quote2: “We're looking for students who are intelligent - very interested in their subject and who can demonstrate their interest”
+  interviews p1: Interviews are used to assess applicants’ academic excellence and potential but, in addition, they provide a way for universities to assess applicants’ passion for subjects they wish to study. Oxford and Cambridge are famous for how important interviews are in their admissions process.
+  interviews p2: Subjects that do not require admissions test invite most of their applicants to the interview while subjects that do invite approximately -50% of applicants. Cambridge invites most of applicants for interviews (many of those invited to interviews will sit admissions test during the interview period). 
+  Interview Format: Interview Format
+  interviews p3: Oxbridge applicants are usually interviewed by 2 or 3 tutors (who will likely be your subject tutors and teach you if you get in), and may have up to two interviews with each interview being 20-30 minutes long. In Oxford, 1 interview will be at your chosen college while the other one will be a randomly allocated college. This is different to Cambridge where all your interviews are held at your chosen college. Students will often be asked to talk about what interests them about the subject they are applying to study, based on their personal statement, or books or articles they have read recently.
+  interviews p4: Interviewees may be given some texts to read and prepare before the interviews*
+  interviews p5: Interviews will usually  consist of 3-5 sets of questions, starting with A-Level standard question and gradually moving up to University first year level questions. Applicants are not expected to be able to answer university level questions so interviewers will give hints, and the emphasis is on how quickly students can absorb new concepts and solve unseen problems, and how much passion and interest they have for the new concepts they are exposed to.
+  interviews checklist html: <h1>Checklist</h1>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Solidify your A-Level knowledge</h3> 
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Read about your favourite topics beyond school level that you can confidently discuss about</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;If you are sciences student, try some challenge questions, e.g. Royal Society of Chemistry and British Biology Olympiad</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Try some of our real past Oxbridge interview questions</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Mock interviews that are 25 minutes long to model real ones</h3>
+  
+  #Personal Statements, Interview Q&A, Blogs
+  Personal Statements jumbotron html: <h1>Personal Statements</h1><h2>of successful applicants</h2>
+  Arts: Arts
+  Sciences: Sciences
+  Past Interview Questions: Past Interview Questions
+  Blogs title: Discovering Oxbridge Myths
+  
+  #Review 
+  Your review for: Your review for
+  Back: Back
+  star html: <b>Star rating out of 5</b> (e.g. 4.5)
+  Achievement: Achievement
+  Comment: Comment
+  Submit a Review: Submit a Review
+  review placeholder 1: E.g. A* in A-Level Biology, university offer
+  review placeholder 2: What was the tuition focused on? Did you find it useful? Were you satisfied with your tutor? Please share with us your opinion!
+  
+  #Tuition
+  Tutor: Tutor
+  Hours: Hours
+  Contact Details: Contact Details
+  Tutor account erased: Tutor account erased
+  Student: Student
+  Tuition Fee: Tuition Fee
+  Student account erased: Student account erased
+  
+  Book tuition with: Book tuition with
+  City: City
+  Note: Note
+  Proceed to Payment: Proceed to Payment
+  
+  Credit Card Number: Credit Card Number
+  Expiration Date: Expiration Date
+  CVC: CVC
+  Pay: Pay
+  
+  #Tutor Profile Search/Show
+  Subject: Subject
+  University: University
+  Degree Subject: Degree Subject
+  Location: Location
+  Teaching Subjects: Teaching Subjects
+  hour: hour
+  Message: Message
+  
+  Book Tuition: Book Tuition
+  About Myself: About Myself
+  Tutoring Approach: Tutoring Approach
+  Teaching Experience: Teaching Experience
+  Extracurricular Interests: Extracurricular Interests
+  
+  Find tutors in: Find tutors in
+  for: for
+  tutorsearchindex html: Find tutors in <span style="font-size:45px; color:white">Any Subject</span> for <br><span style="font-size:45px; color:white">All Levels</span>
+  
+  Materials in: Materials in
+  New: New
+  
+  #Messaging
+  Message Subject: Message Subject
+  Last Sent Date: Last Sent Date
+  Reply: Reply
+  Conversation with: Conversation with
+  Happy to proceed to tuition with: Happy to proceed to tuition with
+  You can book tuition on the tutors profile page: You can book tuition on the tutor's profile page
+  You: You
+  sent at: sent at
+  Cancel: Cancel
+  Contact: Message
+  Message text: Message
+  The message will start with 'Hi {tutor_name}' automatically: The message will start with 'Hi {tutor_name}' automatically
+  tickbox p: I agree with my message being sent to other tutors. Please untick if you only want the message sent to this particular tutor.
+  
+  
+  #Online Tuition
+  Online Tuition - Skype & Idroo: Online Tuition - Skype & Idroo
+  Online Tuition p1: Online learning offers education to be borderless and more accessible and affordable by giving students a large pool of tutors to choose from for one that can meet the students' needs. This is especially beneficial for international students and language learners for the opportunity to learn from local tutors.
+  How Does Skype Tutorial Work?: How Does Skype Tutorial Work?
+  Online Tuition p2: Using a combination of skype chat and collaborative virtual whiteboard, skype tuition allows students and tutors to have tutorials at anytime and anywhere.
+  Online Tuition p3: Students and tutors use computer, web browser and broadband internet for secure 
+      online tutorial. Live video chat program such as skype allows students and tutors 
+      to look at each other and communicate in real time while educational whiteboard 
+      program provides a canvas where students and tutors can write with online pen and 
+      paper to share problems, solutions and explanations. In addition, academic materials 
+      such as problem sheets and past papers in image, word and pdf files can be uploaded 
+      for students and tutors to write and work on.   
+  Online Tuition p4: Skype is recommended as the live video chat program because it is international and 
+      free while we recommend Idroo for virtual whiteboard. Skype is a free program that 
+      can be easily downloaded while Idroo
+  Online Tuition p5: is a free online software that can be used with Google Chrome and latest versions of 
+       Internet Explorer and Firefox.
+  How to use Idroo: How to use Idroo
+  sign up p: Sign up with Idroo or sign in with facebook
+  Create a new board: Create a new board
+  Create a new board p: Click the underlined button
+  Share your board with tutor: Share your board with tutor
+  Share your board with tutor p: Click the white background icon that says sharing and message the url of your board to your tutor
+  Write on the white canvas: Write on the white canvas
+  Write on the white canvas p: Click on the pen icon underlined in red to be able to write on the canvas
+  Upload any past paper or bookpage as pdf doc or image file: Upload any past paper or bookpage as pdf doc or image file
+  Upload any past paper or bookpage as pdf doc or image file p: Click on the icons that say 'Documents' and 'Images'
+  
+  #Contact Us 
+  Send Us a Message: Send Us a Message
+  Send Us a Message p: We are excited to be able to answer any queries, so please get in touch and we will get back to you within 24 hours!
+  Send message: Send message
+  Send message placeholder: Please let us know of any queries you have whether it is about using our site, finding the best suited tutor or about university admissions in general. If booking for free skype consultation, please state the requsted information.
+  
   post_a_tutor_profile: Post a Tutor Profile
   write_a_review: Write a Review
   tutorial_type: Tutorial Type
@@ -27,9 +416,3 @@ en:
   degree_subject: Degree Subject %{degree_subject}
   location: Location %{location}  
   tutorial_type: Tutorial Type %{tutorial_type}
-
-
-  sign_out: Sign Out
-  sign_up: Register
-  sign_in: Sign In
-  

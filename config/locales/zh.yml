@@ -1,18 +1,412 @@
 zh:
+  #header
+  Find Tutors: 寻找导师
+  Try Now: 试一下
+  our_services: 谷路米的服务
+  about_us: 关于谷路米
+  how_it_works: 使用方式
+  our_results: 我们的业绩
+  students_parents: 学生与家长
+  services_for_schools: 给学校提供的服务
+  uk_admissions: 申请英国大学
+  admissions_facts: 申请细节
+  personal_statement: 个人陈述
+  admissions_test: 入学考试
+  written_work: 书面作业参考
+  oxbridge_interviews: 牛津/剑桥面试
+  Free Resources: 有关申请的参考资料
+  US-UK University Admissions: US-UK University Admissions
+  University Application Experiences: University Application Experiences
+  Scholarship Application: Scholarship Application
+  College Essay: 单项
+  Personal Statements: 个人陈述样本
+  Suggested Readings: 读物推荐
+  Oxbridge Interview Questions: 牛津/剑桥面试问题
+  Blogs: 有关博客
+  Scholarships: 奖学金
+  
+  My Tutor Profile: 导师简介
+  Request Reviews: 评论请求
+  My Tuition: 我的学生
+  Inbox: 收件箱
+  Account Setting: 账户管理
+  sign_out: 退出
+  sign_up: 注册
+  sign_in: 登录
+  
+  #footer
+  GuruMe: 谷路米
+  Become A Tutor: 申请成为导师
+  Referral Scheme: 推荐谷路米
+  Online Tuition: 在线指导
+  Terms and Conditions: 使用条款
+  Contact Us: 联系我们
+  Follow Us: 关注我们
+  
+  #register/ signin
+  First Name: 名字
+  Last Name: 姓
+  Email: 电邮
+  Email Address: 电邮
+  Password: 密码
+  Password Confirmation: 密码确认
+  leave blank: 若不想更改，请不要填写
+  Current Password: 现有密码
+  current password p: 输入现有密码才能更改您的资料
+  Cancel my account: 删除帐户
+  Unhappy?: 不想继续？
+  Remember me: 记住登记
+  Forgot your password?: 忘记密码？
+  Edit: 
+  
+  #homepage
+  searchboximg html: <img src="/assets/searchboxiconcn.png" class="searchicon">
+  What subject can we help with?: What can we help with? 
+  searchbox p: 通往牛津/剑桥的桥梁 -  连系导师与学生的平台
+  University Admissions: 入学申请
+  Exam Preparation: 考试预备
+  Location: Location
+  Target University: Target University
+  Tuition Subject: Tuition Subject
+  Choose Country: Choose Country
+  Choose City: Choose City
+  Online marketplace that connects students and tutors: 连系老师与学生的平台
+  Search for Tutors index: 您需要在哪一个科目获得协助？欢迎搜寻我们的导师网络，找一个能配合您要求的导师 
+  Contact Tutors index: 免费联络导师。您可以在进一步了解及感到满意后才接受指导
+  Schedule and start learning: 安排教导
+  Schedule and start learning p: 导师会尽量配合您的学习时间。
+  Our Record: 谷路米业绩
+  Our Record p: 十四个学生得到牛津与剑桥的录取
+  ourstarsimg html: <img src="/assets/toprighttrianglecn.png" height="250" class="pull-right"> 
+  tutors index: 学生给予我们出色导师的评论
+  Materials for Reference: 参考材料
+  Materials for Reference p: 由谷路米团队所搜集的宝贵参考资料
+  Interview Q&A Videos: 面试问与答的的录影片段
+  Read more: 更多详情
+  
+  #about us  
+  about_quotation: 向顶尖的学生学习，但只缴付您能力所及的学费
+  Who we are: 企业简介 
+  Who we are p: 谷路米的创办人包括牛津大学及剑桥大学的在籍学生与毕业生。我们提供一个平台，连系来自英国顶尖学府的导师与有意申请进入这两所大学的学生。通过导师的细心教导，协助学生在整个申请的过程发挥他们最大的潜力以增加学生进入这两所大学的几率。
+  Our Team: 我们的团队
+  Harry Lee: 李赫真
+  Harry Lee p: 赫真从十七岁就以开始教普通中等教育证书及国际预科证书课程的学生。他热爱指导学生，而当学生考到良好成绩时，会为他们骄傲。赫真的梦想是能够为申请英国出色学府的学生提供宝贵的资料，让他们把握机会体现自己。
+  Jian Wong: 黄健佑
+  Jian Wong p: 健佑在十六岁时边读国际中学教育普通证书边教书。他的经验丰富，教过的学生包括国际中学教育普通证书及'A'水准的学生。最近，他在不少学生的牛津剑桥申请过程中给予指点与帮助。他对在牛津读书的阶段充满美好回忆，很希望能帮助准备申请的人被录取而能够体会同样的经历。他对申请过程非常熟悉，希望能通过这个平台与大家分享。
+  Arica Chan: 陳思樺
+  Arica Chan p: 思樺从十七岁开始在英国念书。若没有在国外念书的经验，她根本就不会想到去报读英国顶尖的学府。当她想起许多学生会因学校提供的资料和支持不足而在申请过程中面对困难，思樺决定给这些学生开发多个管道，令他们能够克服难关，进入梦寐以求的大学。
+  Leslie Ho: 何建衡
+  Leslie Ho p: 建衡有多年的教书经验。他在大学念书时也参与多个招生与宣传的活动，包括与牛津的教授一同到英国的各个角落，向大学预科的老师解释和分享申请牛津大学的整个过程。建衡相信进一步的面试准备会令学生表现得更好。所以，他一心一意地希望能帮助学生在申请过程中展现的最好。
+  Why us: 我们的优势
+  about_circle_1_html: <h3>价格实惠</h3><p>每个钟从十五英镑起</p>
+  about_circle_2_html: <h3>导师都有学生评论</h3><p>每个导师都有学生评论，让您决定适不适合您的要求</p>
+  about_circle_3_html: <h3>强大的导师网络</h3><p>每个科目都有上百个导师</p>
+  about_circle_4_html: <h3>社会企业</h3><p>我们免费提供很多有用的资料</p>
+  Our Mission: 我们的使命
+  Our Mission p: 谷路米的目标是能够以低廉的价格提供优质的补习与指导，同时降低申请牛津剑鞘的门槛，让更多学生能够在做好充分准备的情况下申请，而在面试和入学考试中展现自己。为了达到这个目标，谷路米的导师都是负责人，用心和学业成绩一流的大学生或大学毕业生。我们希望这些导师不仅能够在学业上有所帮助，同时可以分享他们的经验，有如学长给予学弟的指点和忠告。
+  
+  #how it works
+  Search for Tutors: 搜寻导师
+  Search for Tutors html: <p>您想在哪一个科目上受教导？</p><p>通过谷路米，您可以参观我们来自顶尖学府的导师的简介。</p>
+  Search for Tutors footer: 输入您选择的科目与您的level
+  Contact Tutors: 联络导师
+  Contact Tutors html: <p>找到您满意的导师？</p>
+        <p>联络您的导师，与他讨论您的需求，并且安排教导日期。</p> 
+        <p>若有什么问题，都可以讯问。我们的导师会尽量在二十四小时内给予答复。</p>
+  Schedule Tuition/ Payment: 安排教导/付帐
+  Schedule Tuition/ Payment html: 
+        <p>满意您的导师？导师与您的时间配合？</p>
+        <li>完成这两个教导预定的步骤</li> 
+        <li>交换联络资料</li> 
+        <li>开始学习!</li>
+  Schedule Tuition/ Payment footer: 输入教导的时间（几个钟头）
+  Tuition: 教导
+  Tuition html: <p>教导预定而时间安排好后，就可以开始学习！</p>
+        <li>做好您的准备，澄清你不熟的地方</li> 
+        <li>您也可准备几分文章，问导师有哪些方面可以写得更好。</li>
+  Write a Review: 写导师评论
+  Write a Review html: <p>您认为教导是否有所帮助，请与我们分享。您的导师评论可以帮助别的学生对我们的导师有更好的认识！</p>
+ 
+  #our stars 
+  our stars header: 恭喜2014年成功被牛津/剑桥录取的学生
+  Name: 性
+  From: 国籍
+  Offer from: 录取的大学
+  Offer subject: 录取科目
+  Anonymous: 匿名
+  Cambridge University: 剑桥大学
+  Oxford University: 牛津大学
+  Cambridge: 剑桥
+  Oxford: 牛津
+  Imperial College: 帝国学院
+  LSE: 伦敦政治经济学院
+  Princeton: 普林斯顿
+  Stanford: 斯坦福
+  Pennsylvania: 宾夕法尼亚
+  Beijing: 北京
+  China: 中国
+  Hong Kong: 香港
+  Korea: 韩国
+  Malaysia: 马来西亚
+  Poland: 波兰
+  Singapore: 新加坡
+  UK: 因果  
+  
+  Biochemistry: 生物化学
+  Chemistry: 化学
+  Earth Sciences: 地球科学
+  Economics: 经济学
+  Economics and Management: 经济与管理
+  E&M: 经济与管理学
+  Engineering: 工程
+  Fine Art: 美术
+  Geography: 地理学
+  Law: 法律学
+  Mathematics: 数学
+  Mathematics and Computer Sciences: 数学与电脑科学
+  Mathematics and Statistics: 数学与统计
+  Molecular Biology: 分子生物
+  Medicine: 医科
+  Natural Sciences: 自然科学
+  PPE: 政治学,哲学及经济学
+  
+  Maria Review: “玛丽亚不仅给予学业上的支持与指导，还更进一步帮助我的个人成长。通过她的辅导，我对申请的科目科目（法律）有了更深的了解，明白法律在我们生活中扮演的重要角色。同时，这也令我能够联想到我读了法律后想对社会做出的贡献。这无可否认的加强了我入选的机会。因此，我非常感激玛利亚。”
+  Maria Student: Kim, 被牛津大学法律系录取
+  Harry Review: “赫真是个非常用心的导师。他一点都不计较时间，而且即使他在国外，也还是一心一意地帮助我做好申请的准备。他对科目的热忱令我也很想进一步了解其中的奥妙。赫真提供的练习问题很适合，针对我所申请的学院和所写的个人陈述。而且，他的资源丰富，指导优质，可以很深入地解释与探讨有关的问题。”
+  Harry Student: Jei, 被牛津大学生物化学系录取
+  Edmond Review: “Edmond 在应付面试方面给了我充分的准备。他给予我不少答题技巧，通过模拟面试让我对面试更有信心。若没有他的帮助，我对准备工作肯定没有那么完善。”
+  Edmond Student: Lee, 被剑桥大学经济学系录取
+  Tom Review: “Tom 提供了一流的练习题，让我对应付面试具有更多信心。甚至，有几个练习题居然与当天面试所问的问题非常类似。我能够被剑桥大学所录取，真是多亏Tom的帮助。”
+  Tom Student: Yu, 被牛津大学化学系录取
+  Holly Review: “她真棒！辅导针对大学申请的过程，而她有耐心地鼓励和帮助我。她的知识非常丰富，人又善良诚恳。没有Holly的指点，我想我不可能会成功地被牛津大学录取。”
+  Holly Student: 匿名, 被牛津大学地理系录取
+  Rohan Review: “辅导非常专业，他给的提议不仅具体，也具有针对性,彻底地分析问题的关键。Rohan是个最佳选择！”
+  Rohan Review 2: "Rohan 提供的模拟面试非常有帮助。他给我的技巧与良言即准确又有用，让我对整个面试过程有了更好的概念。"
+  Rohan Student: Lukasz, 被牛津大学经济与管理系录取
+  Luke Review: “Luke提供的模拟面试对我是个非常大的帮助。他问的问题都是根据之前和未来的趋势经过挑选才问，选出在牛津面试过程中最可能碰到的难关。通过辅导，我比较了解自己的强项与弱点。Luke的读物推荐也非常有帮助（尤其是逻辑和民主的部分）。我对面试具有更进一步的准备，多谢Luke!”
+  Luke Review index: “Luke提供的模拟面试对我是个非常大的帮助。他问的问题都是根据之前和未来的趋势经过挑选才问，选出在牛津面试过程中最可能碰到的难关。通过辅导，我比较了解自己的强项与弱点。Luke的读物推荐也非常有帮助（尤其是逻辑和民主的部分)。。。”
+  Luke Student: Tsui, 被牛津大学政治学,哲学及经济学系录取
+  Nat Review: "Nathaniel 用心地指导我，给了我不少实际的技巧和不同解决问题的方发。他很熟悉牛津招生人员的要求。因为有他的帮助，我对面试和入学考试更有信心，多谢 Nat!"
+  
+  Louis Review: "Louis 对于我在申请医科时给予我的帮助很大。他给了我不少资料和读物，增加了我被录取的机会。 "
+  Sharon Review: "Sharon 非常乐于助人。她时时都乐意回答我所有的问题。而且，她给我的模拟面试也非常有帮助。我很满意她的教导，多谢Sharon!"
+  Kalila Review: "这个导师非常好，在准备方面帮了我不少，让我更有信心。他的教法实际，也随时都可通过Skype联络到，是个很好的导师。多谢！"
+  Lily Review: "Lily 帮助我准备面试。我只和她学了一堂课，但她对我的帮助已不少。她把模拟面试的结构安排得与真的面试一样。她也问了很好的问题，给了我有用的feedback。而且，当您有问题时，她答复得非常快。。。"
+  
+  #students & parents
+  students parents p html: <i>“寻找一个不但符合您的要求，而且读过您所申请的科目的导师，可以与您分享他成功申请的过程。”</i>
+  Oxbridge Application Support: 牛剑申请助力
+  University Q&A: 学长交流
+  University Q&A html: <li>与一个成功被您梦寐以求的学府录取的学长交流</li>
+        <li>从他的经验学习</li>
+  Personal Statement: 个人陈述
+  Personal Statement html: <li>熟悉个人陈述以内应该包括哪些内容</li>
+        <li>最初起稿和接下来的微雕过程中通过电邮或Skype提供建议</li>
+  Admissions Test:  入学考试
+  Admissions Test html: <li>通过练习过去的考试试卷把握答题技巧</li>
+        <li>文章练习班，为您的入学考试(如LNAT)做好准备</li>      
+  Written Work: 书面作业
+  Written Work html: <li>您选择的书面作业，应该展示您的分析，推理和写作能力，这一点至关重要</li>
+        <li>我们可以协助在选择一个会向招生人员留下最好影响的作品</li>
+  Interviews: 面试
+  Interviews html: <li>熟悉面试过程中经常碰到的问题</li>
+        <li>您的导师会提供模拟面试让您有足够的练习</li>
+  students parents quotation html: <i><h1>面对面或在线方式都可行</h1> 
+        <h3>使用Skype以及Virtual Whiteboard</h3></i>
+        
+  exam prep: 考试准备
+  exam prep p: 来自牛津大学和剑桥大学有条件录取率是非常高的
+  exam prep p html: <p>谷路米认为，获得良好的考试成绩不等于一定能够通过面试这关。但是，它仍是整个过程中重要的一截。</p>
+      <p>因此，谷路米也提供考试预备的服务，以让申请人满足有条件录取中的其中考试条件。</p>
+  
+  #services for schools
+  Support for International Schools: 给国际学校提供的服务
+  Support for International Schools p: 谷路米与国际学校GuruMe紧密合作，通过讲座和交流活动帮组外国申请入英国的学生。这些学生很多都有很高的学术潜力，但成功率比起英国学生（20%录取率）却相对地低（11%）。
+  Programme: 服务
+  Programme p: 以下的几方面希望能够在申请过程中最重要的几方面给学生提供支持，而每一项都能定制，以满足学校的需求。
+  Oxbridge Aspiration Talk html: <h2>申请牛津剑桥的讲座</h2>
+        <p>我们的代表会分享他的申请经验，鼓励学努力，以能够考进所最求的大学。</p>
+        <p>我们的代表也会较详细地讨论申请过程中的各方面，如面试，个人陈述及入学考试等。</p>
+  Networking Event html: <h2>分享活动</h2>
+        <p>一队牛津及剑桥的学生或毕业生将会informally与学生分享面试技巧，准备方式等。</p>
+        <p>这些大使将来之您的国家，家长也欢迎参入分享活动</p>      
+  Skype Mock Interviews html: <h2>模拟面试</h2>
+        <p>面试是申请过程中最重要的一部分。我们能够与您的老师合作，提供每个科目的模拟面试。这是面对面试的最佳准备方式。</p>
+        <p>每个模拟面试将会是25分钟，与真正的面试相同。之后，我们会给feedback。</p>
+  schools footer: 若想询问详情，请发邮件给 support@gurume.co.uk       
+  
+  #admissions facts
+  Application Timeline: 申请时间表
+  admissionsfactsbox html: <h2>牛津剑桥的申请过程与美国大学的有些不同，比较注重和强调学术方面。
+      <hr></h2>
+  admissionsfactsquote html: <h3>"您即使没有朋友或爱好也没关系。录取是个纯粹学术上的判断"</h3>
+        <h4>- Mr Nicholson, 牛津大学招生导师</h4>
+  ucas html: <h3>UCAS</h3><p>*对于在home country进行剑桥面试的外国学生（如马来西亚或新加坡）截至日期较早一些。</p><p>** 外国学生也可能需要考IELTS。</p>
+  
+  cambridge early application html: <h3>剑桥早期申请日期</h3><p style="text-decoration:underline">这些申请人必须于20th September之前申请UCAS 与 COPA</p><p>想在上海进行面试的中国学生(30th -31st  Oct)<br>想在新加坡进行面试的新加坡学生 (20th – 29th Oct)</p> 
+  conditional offer html: <h3>有条件录取<i></i></h3><p>面试后，录取条件可能规定得达到的考试成绩。</p><p></p>      
+  
+  #personal statements 
+  personal statement p html: <h1>这是什么？</h1>
+      <h3>这是一篇4000个字的文章，写出申请人为何想进入某个系 - <b>不是大学</b></h3>
+  personal statement checklist html: <h1>清单</h1>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;展现</h3> <p>这里的内容包括展现您对科目的认识与热忱。您可以提到您读过的有关书籍，理论,概念等。这些都可能在面试当中成为讨论点。</p>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;学术学术学术...</h3> <p>虽然您能够提到课外活动等，但强调的方面应该是学术。</p>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;参考成功被录取的人的个人陈述</h3> <p>您可在这儿参考成功被录取的人的个人陈述及推荐读物。</p>
+  
+  #admissions test
+  admissions test p html: <h2 style="text-align:center">这是什么?</h2>
+       <p>入学考试是大学准备的。这些考试用于审查申请人的学术潜力，测试思维能力。</p>
+       <p>这些入学考试不仅只有牛津剑桥使用，其他使用的大学包括杜伦大学、布里斯托尔大学、帝国大学、伦敦政治经济学院、伦敦大学学院等。某些竞争强烈的科目（如法律系或医科）也会使用。</p>
+  More about each test html: <i>入学考试详情</i>      
+  admissions test p2 html: <h2 style="text-align:center">哪些科目必须进过入学考试?</h2>
+      <p>不是每个科目都需要。
+        请在以下的网站参观需要入学考试的科目:</p>
+  admissions test checklist html: <h1>清单</h1>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;练习过去的考试试卷</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;记得在截至日期前申请入学考试</h3> 
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;搜寻在您附近的考试场合</h3>      
+  
+  #written content   
+  Written Content: 书面作业        
+  Written Content p: 文科又是规定得呈交一项书面作业。招生人员想看到的是：
+  Written Contet p2: 您呈交的作业应该展现这几方面的能力。具体如下。
+  Passion: 热忱
+  Passion p: 招生人员想看到对科目的热忱。最容易体现热忱的方式是demonstrating您读过不少课外读物，对科目有些知识和了解。
+  Knowledge: 知识
+  Knowledge p: 这与对科目的热忱有关。您的书面作业应该能够展现你对科目和相关问题有些了解，能够从不同角度搜寻解决方案，提供完整成熟的分析。
+  Analytical ability: 分析能力
+  Analytical ability p: 分析能力是指把一件事情、一种现象、一个概念分成较简单的组成部分，找出这些部分的本质属性和彼此之间的关系单独进行剖析、分辨、观察和研究的一种能力。要避免的是只提供叙述性的文章。能够以一个清晰，简明的方式表达论点，是个好作者的标志。 
+  Sophistication of argument: 高水平的论点
+  Sophistication of argument p: 高水平的论点包括能够从各角度分析问题，对于它的implications给予充分的考虑。有些问题没有绝对的对或错，但找出自己的立场并能够有力地捍卫您的观点非常重要。
+  Last Notes: Last Notes
+  Last Notes p: 书面作业所扮演的角色在不同的学院是不同的。有些学院参考后用于决定是否发出面试邀请。而有些学院用里面的某些内容当作面试的话题。所以，您呈交的书面作业话题应该是一个您准备在面试中讨论的话题。您对此话题应该有深厚的理解与认识。学院一般都不会规定书面作业必须Write one from scratch或take an existing one。只要您的作业足以体现以上的四个attributes，就应该能满足招生人员的要求。
+  
+  #Oxbridge interviews
+  What are interviewers looking for?: 招生人员在寻找什么？
+  Ability to think: 思考能力
+  interviews quote1: “招生人员不一定要求一个对的答案，但是他们要的是思考能力和有创意的思维。”
+  Admissions Tutor: 招生人员
+  Head of Undergraduate Admissions: 本科招生负责人
+  interviews quote2: “我们要求的是思考能力很强，而且和对科目很有热忱的学生”
+  interviews p1: 面试一方面是用于评估申请人的学术潜力。但另一方面，也能让招生人员找出真正对科目有热忱的学生。牛津大学和剑桥大学的面试过程都非常重要。 
+  interviews p2: 不需要入学考试的科目一般邀请多数的申请人参与面试。需要入学考试的科目邀请率较低，大概 50% 的申请人。剑桥大学会邀请较多申请人去面试，而在面试的期间同时让申请人进行入学考试
+  Interview Format: 面试方式
+  interviews p3: 牛剑的面试一般有两三个教授进行（而这些教授将会是您未来的教授）。整个过程一般会有一道两个面试，每个面试大约二三时分钟。在牛津面试，一个会在您选择的学院，另一个在另一个random学院。在剑桥，面试都会在您选择的学院。面试中经常讨论的方面包括从您的个人陈述中抽出的话题，或您为何选择这个科目，读过什么课外读物等。
+  interviews p4: 申请人在面试前可能需要阅读几段篇章*
+  interviews p5: 面试通常会包括A'水准层次的问题以及大学层次的问题。对于大学层次的问题，申请人不可能被要求给予完整的答案。所以，招生人员会给暗示，而他们强调的是申请人吸收新概念的能力，解决从未见过的难题。 
+  interviews checklist html: <h1>清单</h1>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;巩固您的A'水准知识</h3> 
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;阅读课外读物</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;若您是科学系的学生，可尝试一些练习题，如Royal Society of Chemistry and British Biology Olympiad</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;练习一些过去的牛剑面试问题</h3>
+      <h3><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;二十五分钟的模拟面试，与真的面试一样。</h3>
+  
+  #Personal Statements, Interview Q&A, Blogs
+  Personal Statements jumbotron html: <h1 style="display:inline">成功者</h1><h2 style="display:inline">的</h2><h1 style="display:inline">个人陈述样本</h1>
+  Arts: 文科
+  Sciences: 一科
+  Past Interview Questions: 过去的面试问题
+  Blogs title: 揭发牛津myths
+  
+  #Review 
+  Your review for: 您的评论
+  Back: 回去
+  star html: <b>几颗星</b> (如4.5颗)
+  Achievement: 成就
+  Comment: 评论
+  Submit a Review: 提供评论
+  review placeholder 1: E.g. A* in A-Level Biology, university offer
+  review placeholder 2: What was the tuition focused on? Did you find it useful? Were you satisfied with your tutor? Please share with us your opinion!
+  
+  #Tuition
+  Tutor: 辅导
+  Hours: 钟头
+  Contact Details: 联络详情
+  Tutor account erased: 帐户已被删除
+  Student: 学生
+  Tuition Fee: 学费
+  Student account erased: 学生帐户已被删除
+  
+  Book tuition with: 预定教导
+  City: 城市
+  Note: 笔记
+  Proceed to Payment: 结账
+  
+  Credit Card Number: 信用卡号
+  Expiration Date: 到期日
+  CVC: CVC
+  Pay: 付
+  
+  #Tutor Profile Search/Show
+  Subject: 课程
+  University: 大学
+  Degree Subject: 专学
+  Location: 位子
+  Teaching Subjects: 教的科目
+  hour: 钟头
+  Message: 发信息
+  
+  Book Tuition: 预定教导
+  About Myself: 自己介绍
+  Tutoring Approach: 教导方式
+  Teaching Experience: 教书经验
+  Extracurricular Interests: 课外兴趣
+  
+  Find tutors in: 哪科目的导师
+  for: for
+  tutorsearchindex html: 在 <span style="font-size:45px; color:white">任何科目</span> 或  <br><span style="font-size:45px; color:white">任何级别</span> 搜寻导师
+  
+  Materials in: 参考资料在
+  New: 新
+  
+  #Messaging
+  #Messaging
+  Message Subject: Message Subject
+  Last Sent Date: Last Sent Date
+  Reply: Reply
+  Conversation with: Conversation with
+  Happy to proceed to tuition with: Happy to proceed to tuition with
+  You can book tuition on the tutors profile page: You can book tuition on the tutor's profile page
+  You: You
+  sent at: sent at
+  Cancel: 取消
+  Contact: 联系
+  Message text: 信息
+  The message will start with 'Hi {tutor_name}' automatically: The message will start with 'Hi {tutor_name}' automatically
+  tickbox p: I agree with my message being sent to other tutors. Please untick if you only want the message sent to this particular tutor.
 
-  post_a_tutor_profile: "더하기" 
-  write_a_review: Write a Review
 
   
-  university: University %{university}
-  degree_subject: Degree Subject %{degree_subject}
-  location: Location %{location}  
-  tutorial_type: Tutorial Type %{tutorial_type}
+  #Online Tuition
+  Online Tuition - Skype & Idroo: 在线教导 - Skype 与 Idroo
+  Online Tuition p1: 在线教导使到学习不分界限，让世界各地的学生都能参与高质量，价格低廉的教导。这对外国学生特别有帮助。
+  How Does Skype Tutorial Work?: 使用Skype在线教导是怎么样的呢？
+  Online Tuition p2: 通过使用Skype以及Virtual Whiteboard,学生能随时随地接受教导。
+  Online Tuition p3: Skype让学生与导师说话，而Virtual Whiteboard提供一个白板让导师和学生以写的方式沟通，让导师可以把问题的解决方法更清楚地写或画出来。而且，考试试卷也可以通过pdf或MS word各种applications被发送。      
+  Online Tuition p4: 我们推荐的时Skype和Idroo。Skype和Idroo都是免费的，而Idroo另外有Virtual Whiteboard功能。
+  Online Tuition p5: 
+  How to use Idroo: 如何使用Idroo
+  sign up p: 注册新的户口，或用Facebook上线。
+  Create a new board: Create 一个新的白板
+  Create a new board p: 点击有下划线的按钮
+  Share your board with tutor: 与导师share白板
+  Share your board with tutor p: 只需点击白色的“sharing”图标然后把网址发给您的导师。
+  Write on the white canvas: 在白板上写作
+  Write on the white canvas p: 点击有红色下划线的笔的图标
+  Upload any past paper or bookpage as pdf doc or image file: 上载任何pdf或图片的文件。
+  Upload any past paper or bookpage as pdf doc or image file p: 只需点击 “Documents” 或 “Images” 的图标。
   
-  sign_out: "Sign Out"
-  sign_up: Sign Up
-  sign_in: Sign In
-
+  #Contact Us 
+  Send Us a Message: 给我们发信息
+  Send Us a Message p: 我们非常乐意回答您的疑问，随时与我们联络，而我们会尽量在二四十小时内答复。
+  Send message: 发送信息
+  Send message placeholder: Please let us know of any queries you have whether it is about using our site, finding the best suited tutor or about university admissions in general. If booking for free skype consultation, please state the requsted information.
+  university: 大学 %{大学}
+  degree_subject: 科目 %{科目}
+  location: 地点  %{地点 }  
+  tutorial_type: 教导类型 %{教导类型}
+  
 
   date:
     abbr_day_names:

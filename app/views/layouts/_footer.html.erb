@@ -5,12 +5,12 @@
 <div class="footer">    
   <div class="row">
   <div class="col-md-8 col-md-offset-2">           
-    <p><%= link_to "그루미 소개", pages_about_path %> &nbsp;|&nbsp; <%= link_to "이용방법", pages_how_it_works_path %> &nbsp;|&nbsp; <%= link_to "온라인 수업", pages_online_tuition_path %> &nbsp;|&nbsp; <%= link_to "연락처", contacts_path %></p>
+    <p><%= link_to t('about_us'), pages_about_path %> &nbsp;|&nbsp; <%= link_to t('how_it_works'), pages_how_it_works_path %> &nbsp;|&nbsp; <%= link_to t('Online Tuition'), pages_online_tuition_path %> &nbsp;|&nbsp; <%= link_to t('Contact Us'), contacts_path %></p>
       <br>
       </div><!-- end of col-md-8 -->
   </div>
   <div class="copyright">
-        <h3>그루미</h3>
+        <h3><%= t('GuruMe') %></h3>
         <p>Copyright © GuruMe All Rights Reserved</p>
   </div>
       <!--<div class="fb-like" data-href="http://www.youngtutors.com/" data-layout="box_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
