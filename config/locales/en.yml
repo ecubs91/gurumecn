@@ -36,6 +36,7 @@ en:
   
   #footer
   GuruMe: GuruMe
+  GuruMe Team: GuruMe Team
   Become A Tutor: Become A Tutor
   Referral Scheme: Referral Scheme
   Online Tuition: Online Tuition
@@ -83,6 +84,27 @@ en:
   Materials for Reference p: Valuable resources compiled by GuruMe tutors because these are what GuruMe tutors would have found useful when they were applicants themselves.
   Interview Q&A Videos: Interview Q&A Videos
   Read more: Read more
+  
+  #college essay
+  Students College Essays: Students College Essays
+  Students College Essays html: You may find more sample College Essays at <a href="http://collegeappswiki.wikispaces.com/" target="_blank"> AdmitSphere</a>.
+  NB: N.B.
+  NB p: The college essays on this site are strictly meant as a starting point to give an idea of how successful college essays look like. There is no set formulae to writing good college essays. GuruMe IS STRICTLY AGAINST PLAGIARISM OF ANY KIND. CollegeApp employs a plagiarism check system that checks applicants’ work against other published writing so please DO NOT PLAGIARISE.
+  NB p2: These college essays belong to GuruMe tutors and are not to be used by 3rd parties
+  
+  #personal statements
+  Students Personal Statements: Students Personal Statements
+  Students  html: You may find more sample College Essays at <a href="http://collegeappswiki.wikispaces.com/" target="_blank"> AdmitSphere</a>.
+  NB: N.B.
+  NB p3: The personal statements on this site are strictly meant as a starting point to give an idea of how successful personal statements look like. There is no set formula to writing good personal statements. GuruMe IS STRICTLY AGAINST PLAGIARISM OF ANY KIND. UCAS employs a plagiarism check system that checks applicants’ work against other published writing so please DO NOT PLAGIARISE.
+  NB p4: These personal statements belong to GuruMe tutors and are not to be used by 3rd parties
+  pstipheader: Personal Statement - Writing Tips
+  pstipdescription: Personal statement is about 800 words, a page of essay on why I want to study the applying subject - not why I want to study at the applying university...
+  Written By: Written By 
+  Harry Lee: Harry Lee
+  
+  #gurus interviews
+  gurusinterviews: Read about Gurus' application experiences.
   
   #about us
   about_quotation: Learn from top students. Pay what you can afford.
@@ -140,6 +162,9 @@ en:
   Oxford: Oxford
   Imperial College: Imperial College
   LSE: LSE
+  Harvard: Harvard
+  Yale: Yale
+  Brown: Brown
   Princeton: Princeton
   Stanford: Stanford
   Pennsylvania: Pennsylvania
@@ -152,8 +177,10 @@ en:
   Singapore: Singapore
   UK: UK
   
+  Biology: Biology
   Biochemistry: Biochemistry
   Chemistry: Chemistry
+  Computer Sciences: Computer Sciences
   Earth Sciences: Earth Sciences
   Economics: Economics
   Economics and Management: Economics and Management
@@ -169,7 +196,7 @@ en:
   Molecular Biology: Molecular Biology
   Natural Sciences: Natural Sciences
   PPE: PPE
-  
+  Oriental Studies: Oriental Studies
   Maria Review: "Maria was not a tutor - she was a teacher who helped me to take a step further as a student and as a person. Through our sessions, I did not only develop a broader understanding of the subject (Law) but also became more reflective of the significance of the subject and the kind of person I wish to be by studying the subject. This, without any doubt, strengthened my university application in the most significant way and I can not be more thankful that I met her."
   Maria Student: Kim, Law offer from Oxford University
   Harry Review: "Harry is a very dedicated tutor. He tried to give me as much time as possible in order to prepare, even when he was abroad! His enthusiasm for the subject rubbed off on me and the questions he provided were well suited to my personal statement as well the specific college I applied to. His wide range of contacts really helped because he has a large bank of questions at hand. Whenever I was on the wrong track, he would guide to the correct answer without telling me the final answer and he always had a follow up question for me."
@@ -340,11 +367,17 @@ en:
   #Tutor Profile Search/Show
   Subject: Subject
   University: University
+  Graduate School: Graduate School
   Degree Subject: Degree Subject
   Location: Location
+  Within China: Within China
+  Outside China: Outside China
+  Curriculum: Curriculum
   Teaching Subjects: Teaching Subjects
   hour: hour
   Message: Message
+  Contact Details: Contact Details
+  Destroy: Destroy
   
   Book Tuition: Book Tuition
   About Myself: About Myself
@@ -358,6 +391,10 @@ en:
   
   Materials in: Materials in
   New: New
+  
+  Sorry p: Sorry but we don't have the tutor for the subject, university, curriculum and location you requested.
+  Please contact: Please contact
+  Please contact p: and we will get back to you with the tutor you are looking for very shortly.
   
   #Messaging
   Message Subject: Message Subject

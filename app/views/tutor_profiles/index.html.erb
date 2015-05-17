@@ -2,9 +2,7 @@
   <div class="row">
     <div class="col-md-1 col-sm-2 col-xs-1"></div>
     <div class="col-md-7 col-sm-7 col-xs-10">
-      <h2>
-        그루미와 <span style="font-size:45px; color:white">모든 과목</span> 그리고 <span style="font-size:45px; color:white">모든 커리큘럼</span>! 
-      </h2>
+      <h2><%= t('tutorsearchindex html') %></h2>
     </div>
   </div>
 </div>
@@ -15,28 +13,28 @@
     <%= form_tag search_tutor_profiles_path, method: :get, class: "center" do %>
         <div class="row">
           <div class="col-lg-10">
-            <%= label_tag "수업 과목" %>
-            <%= select_tag :search, options_for_select(@all_tutors.map {|tt| [tt.split.map{ |w| ['and','or','of'].include?(w) ? w : w.capitalize}.join(' '),tt]}.insert(0, ["수업과목",nil])), :id => "e1", :style=>"width:100%;", :class => "form-control" %>
+            <%= label_tag t('Subject') %>
+            <%= select_tag :search, options_for_select(@all_tutors.map {|tt| [tt.split.map{ |w| ['and','or','of'].include?(w) ? w : w.capitalize}.join(' '),tt]}.insert(0, [t('Subject'),nil])), :id => "e1", :style=>"width:100%;", :class => "form-control" %>
           </div>
         </div>
         <br>
         <div class="row">
           <div class="col-lg-10"  style="margin-top: 10px;">
-            <%= label_tag "희망 대학" %>
+            <%= label_tag t('Target University') %>
             <%= select_tag :search_university, options_for_select(University.all.pluck(:name),(@tutor_profile.university rescue nil)), :include_blank => true, :id => "university", :class => "form-control" %>
           </div>
         </div>  
         <br>
         <div class="row">
           <div class="col-lg-10"  style="margin-top: 10px;">
-            <%= label_tag "수업위치" %>            
-            <%= select_tag :search_country, options_for_select([[" 나라 선택",""]]+@countries.pluck(:name)), :class => "form-control", :onchange=>"get_country_set_city(this.value)" %>
+            <%= label_tag t('Location') %>            
+            <%= select_tag :search_country, options_for_select([[t('Choose Country'),""]]+@countries.pluck(:name)), :class => "form-control", :onchange=>"get_country_set_city(this.value)" %>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-10" style="margin-top: 10px;">
             <div id="search_city_select">
-              <%= select_tag :search_city, options_for_select([[" 도시 선택",""]]), :id => "e4", :class => "form-control" %>
+              <%= select_tag :search_city, options_for_select([[t('Choose City'),""]]), :id => "e4", :class => "form-control" %>
             </div>
           </div>
         </div>
@@ -44,7 +42,7 @@
         <div class="row">
           <div class="col-lg-10">
             <div onclick="open">
-              <h5>대입 준비</h5>
+              <h5><%= t('University Admissions') %></h5>
             </div>
             <div id="universityAdmissionLevels">
               <!---------------University level---------------->
@@ -54,7 +52,7 @@
               <!---------------/University level---------------->
             </div>
             <div id="examPreparation">
-              <h5>시험 준비</h5>
+              <h5><%= t('Exam Preparation') %></h5>
             </div>
             <div id="examPreparationLevel">
               <!---------------Exam Preparation---------------->
@@ -69,7 +67,7 @@
         <br>
         <div class="row">
           <div class="col-lg-10">
-            <%= submit_tag "선생님 찾기", :name => nil, :class => "btn btn-primary pull-right" %>
+            <%= submit_tag t('Find Tutors'), :name => nil, :class => "btn btn-primary pull-right" %>
           </div>
         </div>
     <% end %>
@@ -86,24 +84,24 @@
             <div class="round-avatar" style = 'background-image: url(<%= tutor_profile.image.url(:small) rescue "/assets/default.jpg" %>); background-size: 120px; margin-left:auto; margin-right:auto;'></div>
           <% end %>
           <% if tutor_profile.user==current_user %>
-          <%= link_to '프로필 없애기', tutor_profile, style: "text-align:center", class: "linkbutton", method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to t('Destroy'), tutor_profile, style: "text-align:center", class: "linkbutton", method: :delete, data: { confirm: 'Are you sure?' } %>
           <% end %>
         </div>
         <div class="col-md-6 col-sm-8 col-xs-12">
           <%= link_to tutor_profile_path(:id => tutor_profile.id, :similar_profiles => @all_profiles-[tutor_profile.id], :search_levels => @search_levels, :search_subject => @search_subject) do %>
           <h3><%= "#{tutor_profile.user.first_name}" %></h3>
           <p>
-            대학/전공: <%= tutor_profile.university %>/ <%= tutor_profile.tutor_degree_subjects.first.degree_subject.capitalize unless tutor_profile.tutor_degree_subjects.blank?  %><br> 
-            국내: <%= [tutor_profile.location_city,tutor_profile.location].join(" | ") %> <br>
-            해외: <%= [tutor_profile.location_two,tutor_profile.country].join(" | ") %><br>
-            커리큘럼:<% lws = tutor_profile.levelwise_subjects %>
+            <%= t('University') %>/<%= t('Degree Subject') %>: <%= tutor_profile.university %>/ <%= tutor_profile.tutor_degree_subjects.first.degree_subject.capitalize unless tutor_profile.tutor_degree_subjects.blank?  %><br> 
+            <%= t('Within China') %>: <%= [tutor_profile.location_city,tutor_profile.location].join(" | ") %> <br>
+            <%= t('Outside China') %>: <%= [tutor_profile.location_two,tutor_profile.country].join(" | ") %><br>
+            <%= t('Curriculum') %>:<% lws = tutor_profile.levelwise_subjects %>
              <% if lws %>
             <% lws.each do |k,v| %>
               <%= "#{k},".html_safe unless v.blank? %>
             <% end %>
           <% end %>
             <br>
-            수업과목: <%= tutor_profile.tutor_teaching_subjects.pluck(:teaching_subject).map { |ts| ts.capitalize}.join(", ") %>
+            <%= t('Teaching Subjects') %>: <%= tutor_profile.tutor_teaching_subjects.pluck(:teaching_subject).map { |ts| ts.capitalize}.join(", ") %>
           </p>
           <p style="font-size:14px;"><%= truncate(tutor_profile.about_myself, :length => 120) %></p>
           <div class="truncate"></div>

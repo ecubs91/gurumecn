@@ -1,11 +1,7 @@
-<div class="jumbotron blogs">
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-6 col-sm-6">
-      <h1>Blogs title</h1>
-    </div>
+<div class="jumbotron resources">
+  <div class="resourcesbox" >
+    <h2 style="text-align:center; color:white" ><%= t('gurusinterviews') %></h2>
   </div>
-  <!-- </div>-->  
 </div>
 
 <div class="container">
@@ -14,11 +10,11 @@
       <div class="col-md-2 col-sm-2">
         <div class="list-group">
           <a href="#" class="list-group-item active" style="font-size:20px">
-            University
+            <%= t('University') %>
           </a>
           <% Category.all.each do |category| %>
           <div class="list-group-item">
-            <%= link_to category.name, blogs_path(category: category.name) %> <%= Blog.where(category_id: @category_id).count %>
+            <%= link_to category.name, blogs_path(category: category.name) %> <p1 class="pull-right"><%= Blog.where(category_id: @category_id).count %></p1>
           </div>
           <% end %> 
         </div>
@@ -31,13 +27,13 @@
             <div class="caption">
               <p><%= blog.created_at.strftime("%e %b %Y") %></p>
               <h4><b><%= blog.title %></b></h4>
-              <p><%= truncate(blog.description, length: 150) %><br><i>By <%= blog.user.first_name %></i></p>
+              <p><%= truncate(blog.description, length: 150) %><br><i><%= t('Written By') %> <%= blog.user.first_name %></i></p>
             </div>
             <p class="pad5 text-right">
               <% if current_user == blog.user %>
-                <%= link_to 'Destroy', blog, style: "text-align:center", class: "linkbutton", method: :delete, data: { confirm: 'Are you sure?' } %>
+                <%= link_to t('Destroy'), blog, style: "text-align:center", class: "linkbutton", method: :delete, data: { confirm: 'Are you sure?' } %>
               <% end %>
-              <%= link_to "Read more", blog, class:"btn btn-default" %>
+              <%= link_to t("Read more"), blog, class:"btn btn-default" %>
             </p>
           </div>
         </div>

@@ -15,9 +15,9 @@ zh:
   written_work: 书面作业参考
   oxbridge_interviews: 牛津/剑桥面试
   Free Resources: 有关申请的参考资料
-  US-UK University Admissions: US-UK University Admissions
-  University Application Experiences: University Application Experiences
-  Scholarship Application: Scholarship Application
+  US-UK University Admissions: 美-英国大学申请
+  University Application Experiences: 大学申请经验
+  Scholarship Application: 奖学金申请
   College Essay: 单项
   Personal Statements: 个人陈述样本
   Suggested Readings: 读物推荐
@@ -36,6 +36,7 @@ zh:
   
   #footer
   GuruMe: 谷路米
+  GuruMe Team: 谷路米球队
   Become A Tutor: 申请成为导师
   Referral Scheme: 推荐谷路米
   Online Tuition: 在线指导
@@ -66,10 +67,10 @@ zh:
   University Admissions: 入学申请
   Exam Preparation: 考试预备
   Location: Location
-  Target University: Target University
-  Tuition Subject: Tuition Subject
-  Choose Country: Choose Country
-  Choose City: Choose City
+  Target University: 希望大学
+  Tuition Subject: 科目
+  Choose Country: 选国家
+  Choose City: 选城市
   Online marketplace that connects students and tutors: 连系老师与学生的平台
   Search for Tutors index: 您需要在哪一个科目获得协助？欢迎搜寻我们的导师网络，找一个能配合您要求的导师 
   Contact Tutors index: 免费联络导师。您可以在进一步了解及感到满意后才接受指导
@@ -83,6 +84,24 @@ zh:
   Materials for Reference p: 由谷路米团队所搜集的宝贵参考资料
   Interview Q&A Videos: 面试问与答的的录影片段
   Read more: 更多详情
+  
+  #College Essays
+  Students College Essays: 在学生的单项
+  Students College Essays html: 可以再<a href="http://collegeappswiki.wikispaces.com/" target="_blank"> AdmitSphere</a>找更多的单项
+  NB: 注意
+  NB p: The college essays on this site are strictly meant as a starting point to give an idea of how successful college essays look like. There is no set formulae to writing good college essays. GuruMe IS STRICTLY AGAINST PLAGIARISM OF ANY KIND. CollegeApp employs a plagiarism check system that checks applicants’ work against other published writing so please DO NOT PLAGIARISE.
+  NB p2: These college essays belong to GuruMe tutors and are not to be used by 3rd parties
+  
+  Students Personal Statements: 在学生的个人陈述
+  NB p3: The personal statements on this site are strictly meant as a starting point to give an idea of how successful personal statements look like. There is no set formula to writing good personal statements. GuruMe IS STRICTLY AGAINST PLAGIARISM OF ANY KIND. UCAS employs a plagiarism check system that checks applicants’ work against other published writing so please DO NOT PLAGIARISE.
+  NB p4: These personal statements belong to GuruMe tutors and are not to be used by 3rd parties
+  pstipheader: 个人陈述 - 怎样
+  pstipdescription: 个人陈述式八百左右个子，一页的文章说明为什么要学习申请的科目-不是为什么要在申请的大学学习。。。
+  Written By: 作家
+  Harry Lee: 李赫真
+  
+  #gurus interviews
+  gurusinterviews: 看于谷路的申请经验
   
   #about us  
   about_quotation: 向顶尖的学生学习，但只缴付您能力所及的学费
@@ -140,6 +159,9 @@ zh:
   Oxford: 牛津
   Imperial College: 帝国学院
   LSE: 伦敦政治经济学院
+  Harvard: 哈佛
+  Yale: 耶鲁
+  Brown: 布朗
   Princeton: 普林斯顿
   Stanford: 斯坦福
   Pennsylvania: 宾夕法尼亚
@@ -152,8 +174,10 @@ zh:
   Singapore: 新加坡
   UK: 因果  
   
+  Biology: 生物学
   Biochemistry: 生物化学
   Chemistry: 化学
+  Computer Sciences: 计算机科学
   Earth Sciences: 地球科学
   Economics: 经济学
   Economics and Management: 经济与管理
@@ -169,6 +193,7 @@ zh:
   Medicine: 医科
   Natural Sciences: 自然科学
   PPE: 政治学,哲学及经济学
+  Oriental Studies: 东方学
   
   Maria Review: “玛丽亚不仅给予学业上的支持与指导，还更进一步帮助我的个人成长。通过她的辅导，我对申请的科目科目（法律）有了更深的了解，明白法律在我们生活中扮演的重要角色。同时，这也令我能够联想到我读了法律后想对社会做出的贡献。这无可否认的加强了我入选的机会。因此，我非常感激玛利亚。”
   Maria Student: Kim, 被牛津大学法律系录取
@@ -341,11 +366,17 @@ zh:
   #Tutor Profile Search/Show
   Subject: 课程
   University: 大学
+  Graduate School: 研究所
   Degree Subject: 专学
   Location: 位子
+  Within China: 国内
+  Outside China: 海外
+  Curriculum: 课程
   Teaching Subjects: 教的科目
   hour: 钟头
   Message: 发信息
+  Contact Details: 联络站
+  Destroy: 破坏
   
   Book Tuition: 预定教导
   About Myself: 自己介绍
@@ -354,11 +385,15 @@ zh:
   Extracurricular Interests: 课外兴趣
   
   Find tutors in: 哪科目的导师
-  for: for
+  for: 为
   tutorsearchindex html: 在 <span style="font-size:45px; color:white">任何科目</span> 或  <br><span style="font-size:45px; color:white">任何级别</span> 搜寻导师
   
   Materials in: 参考资料在
   New: 新
+  
+  Sorry p: 对不起，我们没有您要请的辅导（科目，大学，课程，位置）。
+  Please contact: 请联络
+  Please contact p: 我们就给您介绍您找的辅导很快.
   
   #Messaging
   #Messaging

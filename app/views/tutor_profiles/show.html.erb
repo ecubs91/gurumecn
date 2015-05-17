@@ -21,30 +21,30 @@
             </div>
           </div>            
         </center><br>
-        <p><%= "후기 #{@reviews.length} 건" %></p>
+        <p><%= "#{@reviews.length} Reviews " %></p>
         <!--<h3>시급: <%= @tutor_profile.hourly_rate.to_i %>만원</h3>
         <br>-->
         <% if current_user == @tutor_profile.user %>
-          <%= link_to "후기 요청", invite_for_review_tutor_profiles_path, class: "btn btn-success" %><br>
-          <%= link_to '프로필 수정', new_tutor_profiles_path, class: "btn btn-success" %>
+          <%= link_to t('Request Reviews'), invite_for_review_tutor_profiles_path, class: "btn btn-success" %><br>
+          <%= link_to t('Edit'), new_tutor_profiles_path, class: "btn btn-success" %>
         <% else %> 
           <button type="button" class="btn btn-primary myButtons" data-toggle="modal" data-target="#messageModal">
-              연락하기
+              <%= t('Message') %>
           </button>
         <% end %>
         
       </div>  
       <div class="col-lg-4 col-md-6 col-sm-7">
         <h2><b><%= "#{@tutor_profile.user.first_name}" %></b></h2>   
-        <p><b>대학/전공:</b> <%= "#{@tutor_profile.university}" %>/ <%= @tutor_profile.tutor_degree_subjects.first.degree_subject.capitalize rescue nil %></p>
+        <p><b><%= t('University') %>/<%= t('Degree Subject') %>:</b> <%= "#{@tutor_profile.university}" %>/ <%= @tutor_profile.tutor_degree_subjects.first.degree_subject.capitalize rescue nil %></p>
         
         <% if @tutor_profile.graduate_school.present? %>
-          <p><b>대학원/전공:</b> <%= "#{@tutor_profile.graduate_school}" %></p>
+        <p><b><%= t('Graduate School') %>/<%= t('Degree Subject') %>:</b> <%= "#{@tutor_profile.graduate_school}" %></p>
         <% else %>          
         <% end %>
-        <p><b>국내:</b> <%= [@tutor_profile.location_city,@tutor_profile.location].join(" | ") %> (<%= @tutor_profile.detailed_location %>)</p>
-        <p><b>해외:</b> <%= [@tutor_profile.location_two,@tutor_profile.country].join(" | ") %></p>
-        <p><b>수업과목:</b><br>
+        <p><b><%= t('Within China') %>:</b> <%= [@tutor_profile.location_city,@tutor_profile.location].join(" | ") %> (<%= @tutor_profile.detailed_location %>)</p>
+        <p><b><%= t('Outside China') %>:</b> <%= [@tutor_profile.location_two,@tutor_profile.country].join(" | ") %></p>
+        <p><b><%= t('Teaching Subjects') %>:</b><br>
         <p1 style="font-size:13px;"><i><%= @tutor_profile.tutor_degree_subjects.first.degree_subject.capitalize rescue nil %></i>: <%= @tutor_profile.tutor_degree_subjects.first.degree_subject_levels.pluck(:level).join(", ") rescue nil %><br>
           <% lws = @tutor_profile.levelwise_subjects %>
           <% if lws %>
@@ -53,7 +53,7 @@
             <% end %>
           <% end %>
           </p1>
-        <p><b>연락처:</b><br><%= @tutor_profile.contact_details %></p>
+        <p><b><%= t('Contact Details') %>:</b><br><%= @tutor_profile.contact_details %></p>
       <br>
       </div>
       <div class="col-lg-3 col-md-2 col-sm-1">
@@ -63,7 +63,7 @@
             <div class="caption">
               <h4><b><%= blog.title %></b></h4>
               <p style="font-size:12px;"><%= truncate(blog.description, length: 150) %><br><i>By <b><%= "#{@tutor_profile.user.first_name.capitalize}" %></i></p>
-              <p style="text-align:right"><%= link_to 'Read more', blog, class:"btn btn-default" %></p>
+              <p style="text-align:right"><%= link_to t('Read more'), blog, class:"btn btn-default" %></p>
             </div>
           </div>
         <% end %>
@@ -80,10 +80,10 @@
       </thead>
       <tbody>
         <tr>
-          <td><h3>자기소개</h3><p style="font-weight: normal;"><%= h("#{@tutor_profile.about_myself}").gsub(/\n/, '<br/>').html_safe %></p></td>
+          <td><h3><%= t('About Myself') %></h3><p style="font-weight: normal;"><%= h("#{@tutor_profile.about_myself}").gsub(/\n/, '<br/>').html_safe %></p></td>
         </tr> 
         <tr>
-          <td><h3>과외경력</h3><p style="font-weight: normal;"><%= h("#{@tutor_profile.teaching_experience}").gsub(/\n/, '<br/>').html_safe %></p></td>
+          <td><h3><%= t('Teaching Experience') %></h3><p style="font-weight: normal;"><%= h("#{@tutor_profile.teaching_experience}").gsub(/\n/, '<br/>').html_safe %></p></td>
         </tr>
       </tbody>
     </table> 
@@ -92,7 +92,6 @@
 </div>    
   <div class="col-md-8 col-md-offset-2">
     <% if @reviews.blank? %>
-      <h4>아직 후기가 없습니다.</h4>
     <% else %>
       <table class="table">
         <thead>
@@ -140,21 +139,21 @@
         <div class="modal-body">
           <%= hidden_field_tag :similar_users, @similar_users.to_json %>
           <div class="form-group">
-            <%= label_tag "제목" %>
+            <h4><%= t('Message Subject') %></h4>
             <%= text_field_tag :subject, @message_subject, class: "form-control" %>
           </div>
           <div class="form-group">
-            <%= label_tag "메세지" %>
-            <%= text_area_tag :body, nil, class: "form-control", placeholder: "'안녕하세요 {선생님 성함}'으로 자동 시작합니다" %>
+            <h4><%= t('Message text') %></h4>
+            <%= text_area_tag :body, nil, class: "form-control", placeholder: t("The message will start with 'Hi {tutor_name}' automatically") %>
           </div>
           <%= hidden_field_tag :user, @user.id %>
           <div class="form-group mrgtop10">
-            <p style="font-size: 13px"><%= check_box_tag :accept, nil, :checked => true %> 다른 선생님들께 이 메세지가 전송되는 것에 동의합니다. 이 선생님만을 원하신다면 체크 버튼을 없애주세요.</p>
+            <p style="font-size: 13px"><%= check_box_tag :accept, nil, :checked => true %> <%= t('tickbox p') %></p>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
-          <%= submit_tag '메세지 전송', class: "btn btn-primary" %>
+          <%= submit_tag t('Send message'), class: "btn btn-primary" %>
         </div>
       <% end %>
 
