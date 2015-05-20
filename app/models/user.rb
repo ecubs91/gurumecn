@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   has_many :questions
   has_many :blogs, dependent: :destroy
   has_many :replies, dependent: :destroy
+  has_many :comments, dependent: :destroy
   
 
 

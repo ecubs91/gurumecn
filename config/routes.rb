@@ -7,7 +7,11 @@ scope "(:locale)", locale: /en|zh/ do
   resources :categories
 
   resources :blogs do
-    resources :replies, except: [:show, :index]
+    collection do
+      post "create_blog_comment" do
+        post "create_blog_comment_reply"
+      end
+    end
   end
 
   devise_for :admin_users, ActiveAdmin::Devise.config

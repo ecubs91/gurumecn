@@ -1,4 +1,6 @@
 class Blog < ActiveRecord::Base
+  acts_as_commentable
+  
     has_attached_file :image,
                       :storage => :s3,
                       :bucket => "gurumek.s3-ap-northeast-1.amazonaws.com",
@@ -9,6 +11,7 @@ class Blog < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
   has_many :replies
+  
   validates_presence_of :user_id
   
 end

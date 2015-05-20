@@ -23,7 +23,28 @@
     <p><%= @blog.content.html_safe %></p>
     
     <br>
-    <%= link_to "Write Comment", new_blog_reply_path(@blog), class: "btn btn-primary" %>
+    <%= form_for "", :url => create_blog_comment_blogs_path, :method=>:post do |f| %>
+          <%= f.hidden_field "id", :value => @blog.id %>
+          <h4><b><%= t('Comment') %></b></h4> <%= f.text_area "comment_content", :class=> "form-control", :rows => "4"  %><br>
+    <%= f.submit t("Submit a Review"), :class=> "btn btn-primary" %>
+        <br><br>
+        <% end %>
+        <table>
+          <tbody>
+             <% @all_comments.each do |comment| %>
+                <tr>
+                  <td>
+                    <% @user = User.find(comment.user_id) %>
+                    <p>Posted by <b><%= @user.first_name %></b></p>
+                    <p><%= comment.created_at.strftime("%-m/%-d/%y") %></p>
+                    <p><%= h(comment.body).gsub(/\n/, '<br/>').html_safe %> </p>                                       
+                  </td>
+                </tr>
+             <% end %>
+          </tbody>
+        </table>      
+    <br>
+    
     <br>
     <% if @replies.blank? %>
     <% else %>
@@ -52,7 +73,7 @@
       <% if current_user == @blog.user %>
         <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-default" %>
       <% end %> 
-      <%= link_to 'Back to Blog', blogs_path, class: "btn btn-default" %></p>
+      <%= link_to t('Back'), blogs_path, class: "btn btn-default" %></p>
   </div>
   <div class="col-md-2"></div>
 </div>

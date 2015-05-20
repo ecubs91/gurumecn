@@ -1,5 +1,5 @@
 class CommentsController < InheritedResources::Base
-
+  
   private
 
     def comment_params

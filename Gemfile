@@ -30,7 +30,7 @@ gem 'rails4-autocomplete'
 gem 'activeadmin', github: 'activeadmin'
 gem 'wicked'
 gem "nested_form"
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor_rails'
 
 group :production do
 	gem 'pg'

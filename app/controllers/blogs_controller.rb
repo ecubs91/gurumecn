@@ -28,6 +28,21 @@ class BlogsController < InheritedResources::Base
     @blog = Blog.find(params[:id])
     @user = @blog.user    
     @tutor_profile = @blog.user.tutor_profile
+    @all_comments = @blog.comment_threads
+    @root_comments = @blog.root_comments
+  end
+  
+  def create_blog_comment
+    @blog = Blog.find(params[:id])
+    @user_who_commented = current_user
+    @comment = Comment.build_from( @blog, @user_who_commented.id, params[:comment_content] )
+    @comment.save
+    redirect_to :back
+  end
+
+  def create_blog_comment_reply
+    @user_who_commented_replied = current_user
+    @comment.move_to_child_of(the_desired_parent_comment)
   end
   
   private

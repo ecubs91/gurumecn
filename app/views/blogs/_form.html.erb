@@ -35,7 +35,7 @@
         <div class="col-md-12">
           <div class="form-group">
             <%= f.label :content %><br>
-            <%= f.cktext_area :content, class: "form-control" %>
+            <%= f.text_area :content, class: "form-control ckeditor" %>
           </div>
         </div>
         <div class="col-md-12">
@@ -59,3 +59,9 @@
     </div>
   </div>
 <% end %>
+
+<script>
+  $('.ckeditor').ckeditor({
+    // optional config
+  });
+</script>

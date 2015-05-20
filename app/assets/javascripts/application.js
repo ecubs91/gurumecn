@@ -20,4 +20,4 @@
 //= require select2
 //= require jquery.raty
 //= require jquery.Jcrop
-//= require ckeditor/init
+//= require ckeditor-jquery
