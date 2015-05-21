@@ -1,6 +1,6 @@
 Etsydemo::Application.routes.draw do
 
-scope "(:locale)", locale: /en|zh/ do
+# scope "(:locale)", locale: /en|zh/ do
 
   resources :comments
 
@@ -77,7 +77,7 @@ scope "(:locale)", locale: /en|zh/ do
     resources :enquiries 
     
     resources :users
-end  
+# end  
 
 
 
