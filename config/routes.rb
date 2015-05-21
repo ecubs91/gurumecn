@@ -1,6 +1,9 @@
 Etsydemo::Application.routes.draw do
 
-# scope "(:locale)", locale: /en|zh/ do
+   devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  
+ scope "(:locale)", locale: /en|zh/ do
 
   resources :comments
 
@@ -14,8 +17,7 @@ Etsydemo::Application.routes.draw do
     end
   end
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+ 
   resources :subjects
 
   resources :tutorships do
@@ -77,7 +79,7 @@ Etsydemo::Application.routes.draw do
     resources :enquiries 
     
     resources :users
-# end  
+ end  
 
 
 
