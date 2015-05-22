@@ -8,12 +8,12 @@ class TutorProfile < ActiveRecord::Base
   
   has_attached_file :image, :styles => { :medium => "200x200>", :small => "100x100#", :large => "500x500>" }, :class => "img-circle", :default_url => "default.jpg", :processors => [:cropper],
                     :storage => :s3,
-                    :bucket => "gurumek.s3-ap-northeast-1.amazonaws.com",
+                    :bucket => "gurumecn.s3-ap-northeast-1.amazonaws.com",
                     :s3_credentials => "#{Rails.root}/config/s3.yml"
   
   has_attached_file :image2,
                     :storage => :s3,
-                    :bucket => "gurumek.s3-ap-northeast-1.amazonaws.com",
+                    :bucket => "gurumecn.s3-ap-northeast-1.amazonaws.com",
                     :s3_credentials => "#{Rails.root}/config/s3.yml"
   
   

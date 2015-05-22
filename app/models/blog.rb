@@ -3,7 +3,7 @@ class Blog < ActiveRecord::Base
   
     has_attached_file :image,
                       :storage => :s3,
-                      :bucket => "gurumek.s3-ap-northeast-1.amazonaws.com",
+                      :bucket => "gurumecn.s3-ap-northeast-1.amazonaws.com",
                       :s3_credentials => "#{Rails.root}/config/s3.yml"
                   
     validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
