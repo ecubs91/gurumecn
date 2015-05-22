@@ -29,13 +29,13 @@
     <%= f.submit t("Submit a Review"), :class=> "btn btn-primary" %>
         <br><br>
         <% end %>
-        <table>
+        <table class="table">
           <tbody>
              <% @all_comments.each do |comment| %>
                 <tr>
                   <td>
                     <% @user = User.find(comment.user_id) %>
-                    <p>Posted by <b><%= @user.first_name %></b></p>
+                    <p><%= @user.first_name %></p>
                     <p><%= comment.created_at.strftime("%-m/%-d/%y") %></p>
                     <p><%= h(comment.body).gsub(/\n/, '<br/>').html_safe %> </p>                                       
                   </td>

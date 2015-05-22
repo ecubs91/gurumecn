@@ -79,7 +79,7 @@ Etsydemo::Application.routes.draw do
     resources :enquiries 
     
     resources :users
- end  
+ 
 
 
 
@@ -133,7 +133,7 @@ Etsydemo::Application.routes.draw do
   get "admin/run_script"
 
   root 'pages#index'
-  
+    end 
 
 
   # The priority is based upon order of creation: first created -> highest priority.
