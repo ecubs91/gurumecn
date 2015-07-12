@@ -4,16 +4,12 @@ ActiveAdmin.register TutorProfile do
 
   permit_params :utf8, :authenticity_token, :commit, :university, :location, :location_city, :country, :location_two
 
-  actions :all, :except => [:new,:destroy]
+  actions :all, :except => [:new]
 
   index do
     column :id
     column :user
-    column :degree_subject
-    column :teaching_subject
-    column :teaching_subject_2
-    column :teaching_subject_3
-    column :subject_level
+    column :degree_subject    
     actions
   end
 

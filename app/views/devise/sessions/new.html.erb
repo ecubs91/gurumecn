@@ -1,18 +1,28 @@
-<div class="container">
-  
-
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-       <h2><%= t('sign_in') %></h2>
+    <div class="col-md-6">
+       <div class="loginleft">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       </div>
+    </div>
+    <div class="col-md-6">
+       <div class="loginright">
+          <br><br>
+          <h2><%= t('sign_in') %></h2>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
+          
           <div class="form-group">
             <h4><b><%= t('Email') %></b></h4>
-            <%= f.email_field :email, class: "form-control" %>
+             <ul class="input-list style-2 clearfix">             
+             <%= f.email_field :email, class: "input-list style-2 clearfix", type:"text" %>                     
+             </ul>
+            
           </div>
           <div class="form-group">
             <h4><b><%= t('Password') %></b></h4>
-            <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+             <ul class="input-list style-2 clearfix">             
+             <%= f.password_field :password, autocomplete: "off", class: "input-list style-2 clearfix", type:"text" %>                     
+             </ul>            
           </div>
           <% if devise_mapping.rememberable? %>
             <div class="form-group">
@@ -21,10 +31,11 @@
             </div>
           <% end %>
           <div>
-            <%= f.submit t("sign_in"), class: "btn btn-success" %>
+            <%= f.submit t("sign_in"), class: "btn btn-primary" %>
           </div>
     <% end %><br>
-    <%= render "devise/shared/links" %>
+          <%= render "devise/shared/links" %>
+          
+       </div>      
     </div>
   </div>
-

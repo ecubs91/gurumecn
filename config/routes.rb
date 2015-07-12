@@ -1,9 +1,9 @@
 Etsydemo::Application.routes.draw do
-
+scope "(:locale)", locale: /en|zh/ do
    devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
- scope "(:locale)", locale: /en|zh/ do
+ 
 
   resources :comments
 

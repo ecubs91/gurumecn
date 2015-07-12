@@ -14,19 +14,10 @@
   </div>
 </div>
 <div class="container profile">
-  <br>  
-<div class="row">
-  <div class="col-md-3 col-sm-4" style="border-right: 2px solid #eee">
-    <h4>><%= t('Materials in') %> <b><%= @search_university %> <%= @search_subject %></b>&nbsp;<span class="badge"><%= t('New') %></span> </h4>
-    <h4>      
-      · <%= link_to t("College Essay"), pages_college_essays_path, class: "link" %><br>
-      · <%= link_to t("personal_statement"), pages_personal_statements_path, class: "link" %> 
-    </h4>
-    <hr>
     <%= form_tag search_tutor_profiles_path, method: :get, class: "center" do %>
         <div class="row">
           <div class="col-lg-10">
-            <%= label_tag t('Subject') %>
+            <%= label_tag t('Tuition Subject') %>
             <%= select_tag :search, options_for_select(@all_tutors.map {|tt| [tt.split.map{ |w| ['and','or','of'].include?(w) ? w : w.capitalize}.join(' '),tt]}.insert(0, [t('Subject'),nil])), :id => "e1", :style=>"width:100%;", :class => "form-control" %>
           </div>
         </div>

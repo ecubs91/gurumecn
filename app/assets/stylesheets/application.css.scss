@@ -162,11 +162,12 @@
 }
 
 .indexsearchbutton { 
-  background: #4ED963;
+  background: #ea6779;
   text-align: center;
   color: white;
   font-family: georgia;
-  border-color: #f25842;
+  border-color: #ea6779;
+  border-radius: 25px;
   border: 1px solid #ccc
 }
 
@@ -183,7 +184,7 @@
 }
 .index {
   max-width: 100%;
-  background-image: url("https://dl.dropboxusercontent.com/s/b0lgjnvxkbod5n4/collage2.jpg");
+  background-image: url("http://7xkbd8.com1.z0.glb.clouddn.com/pages1542768438.jpg");
   background-size: cover;
   h1, h2 {
   font-family: guardian-egyptt, georgia, serif;
@@ -254,21 +255,21 @@
 /*bootstrap overrides
 ____________________*/
 .navbar-default {
-  background: none;
-
+  background: #69c2ec;
 }
 
 .navbar-default .navbar-brand {
   padding-top: 5px;
 }
 .navbar-default .navbar-nav li a {
+  color: white;
   font-size: 17px; 
   font-family: Estrangelo Edessa;
   font-weight: 700;
 
 }
 .navbar-default .navbar-nav li a:hover {
-  color: #7997F2;
+  color: white;
   font-size: 17px; 
   font-weight: 700;
 }
@@ -276,7 +277,7 @@ ____________________*/
 }
 
 .navbar-default .navbar-nav .dropdown a:focus, .navbar-default .navbar-nav .dropdown a:hover {
-  color: #7997F2;
+  color: white;
   background: white;
 }
 .navbar-default .navbar-nav .dropdown a {
@@ -933,3 +934,92 @@ fieldset{
 .height25{
   height: 35px;
 }
+.containerprofile {
+   background-image: url("http://7xkbd8.com1.z0.glb.clouddn.com/pagesbg.png");
+   background-size: cover;
+   height:100%
+}
+.searchbox {
+   background: white;
+   margin-left: 10px;
+   margin-right: 0 !important;
+   padding-left: 15px;
+   padding-bottom: 10px;
+   border-radius: 5px;
+}
+.profilebox {
+   background: white;
+   margin-right: 10px;
+   padding-left: 0px;
+   padding-top: 20px;
+   border-radius: 5px;
+}
+.loginleft {
+   background-image: url("http://7xkbd8.com1.z0.glb.clouddn.com/pageslogin-left-pic.png");
+   background-size: cover;
+   margin: 0px 0px 0px 0px !important;
+   height:100%;
+}
+.loginright {
+   background-image: url("http://7xkbd8.com1.z0.glb.clouddn.com/pagesbg.png");
+   background-size: cover;
+   height:100%;
+   padding: 10px 20px 10px 20px;
+   margin: 0px 0px 0px 0px !important;
+}
+.style-2 input[type="text"] {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  border-radius: 25px;
+  transition: border 0.3s;
+}
+.style-2 input[type="text"]:focus,
+.style-2 input[type="text"].focus {
+  border: solid 5px #969696;
+  border-radius: 25px;
+}
+.input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+.input[type="text"]:focus {
+  outline: none;
+}
+.style-2 input[type="select"] {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  border-radius: 25px;
+  transition: border 0.3s;
+}
+
+.styled-select-box {
+   background: transparent;
+   width: 80%;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+.styled-select {
+  padding: 5px;
+  width: 200px;
+  border: solid 5px #c9c9c9;
+  border-radius: 25px;
+  transition: border 0.3s;
+   }
+.styled-select-index {
+  padding: 5px;
+  width: 400px;
+  border: solid 5px #c9c9c9;
+  border-radius: 25px;
+  transition: border 0.3s;
+   }

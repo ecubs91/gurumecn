@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513142856) do
+ActiveRecord::Schema.define(version: 20150712013448) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -284,6 +284,11 @@ ActiveRecord::Schema.define(version: 20150513142856) do
     t.string   "image2_content_type"
     t.integer  "image2_file_size"
     t.datetime "image2_updated_at"
+    t.string   "hobby_string"
+    t.string   "hobby"
+    t.string   "wechat"
+    t.string   "skype"
+    t.string   "line"
   end
 
   create_table "tutor_teaching_subjects", force: true do |t|

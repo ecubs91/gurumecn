@@ -1,5 +1,13 @@
 class PagesController < ApplicationController
 
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+
+  def default_url_options(options={})
+    { locale: I18n.locale }
+  end
+   
   def index
     @all_levels = Level.get_all_levels
     @degree_subjects = TutorProfile.all.pluck(:degree_subject)

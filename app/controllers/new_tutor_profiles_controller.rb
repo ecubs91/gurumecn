@@ -214,7 +214,7 @@ class NewTutorProfilesController < Wicked::WizardController
 
   private
   def step_1_params
-    params.require(:tutor_profile).permit(:university, :hourly_rate, :location, :location_two, :contact_num, :location_two, :country, :detailed_location, :contact_details, :graduate_school, :image2)
+    params.require(:tutor_profile).permit(:university, :hourly_rate, :hobby, :location, :location_two, :contact_num, :location_two, :country, :detailed_location, :wechat, :line, :skype, :contact_details, :graduate_school, :image2)
   end
 
   def step_2_params

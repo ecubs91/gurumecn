@@ -1,30 +1,29 @@
-<div class="searchresults">
-  <div class="row">
-    <div class="col-md-1 col-sm-2 col-xs-1"></div>
-    <div class="col-md-7 col-sm-7 col-xs-10">
-      <h2><%= t('tutorsearchindex html') %></h2>
-    </div>
-  </div>
-</div>
-<div class="container profile">
+<div class="containerprofile">
   <br>  
 <div class="row">
-  <div class="col-md-3 col-sm-4" style="border-right: 2px solid #eee">
+  <div class="col-md-3 col-sm-4">
     <%= form_tag search_tutor_profiles_path, method: :get, class: "center" do %>
-        <div class="row">
-          <div class="col-lg-10">
-            <%= label_tag t('Subject') %>
-            <%= select_tag :search, options_for_select(@all_tutors.map {|tt| [tt.split.map{ |w| ['and','or','of'].include?(w) ? w : w.capitalize}.join(' '),tt]}.insert(0, [t('Subject'),nil])), :id => "e1", :style=>"width:100%;", :class => "form-control" %>
-          </div>
-        </div>
-        <br>
+     <div class="searchbox">
         <div class="row">
           <div class="col-lg-10"  style="margin-top: 10px;">
             <%= label_tag t('Target University') %>
-            <%= select_tag :search_university, options_for_select(University.all.pluck(:name),(@tutor_profile.university rescue nil)), :include_blank => true, :id => "university", :class => "form-control" %>
+                              
+             <ul class="styled-select">
+             <%= select_tag :search_university, options_for_select(University.all.pluck(:name),(@tutor_profile.university rescue nil)), :include_blank => true, style: "width:80%;", class: "styled-select-box" %> <span class="glyphicon glyphicon-search" style="font-size:25px;color:#ea6779;margin-top:5px"></span>
+             </ul>
           </div>
         </div>  
         <br>
+        <div class="row">
+          <div class="col-lg-10">
+            <%= label_tag t('Tuition Subject') %>
+             <ul class="styled-select">             
+                <%= select_tag :search, options_for_select(@all_tutors.map {|tt| [tt.split.map{ |w| ['and','or','of'].include?(w) ? w : w.capitalize}.join(' '),tt]}.insert(0, [t('Subject'),nil])),  :style=>"width:100%;", class: "styled-select-box" %>                   
+             </ul>            
+          </div>
+        </div>
+        <br>
+        
         <div class="row">
           <div class="col-lg-10"  style="margin-top: 10px;">
             <%= label_tag t('Location') %>            
@@ -70,6 +69,7 @@
             <%= submit_tag t('Find Tutors'), :name => nil, :class => "btn btn-primary pull-right" %>
           </div>
         </div>
+     </div>
     <% end %>
   </div>
 
@@ -78,36 +78,74 @@
 
   <div class="col-md-9 col-sm-7">
     <% @tutor_profiles.each do |tutor_profile| %>
-      <div class="row">
-        <div class="col-md-2 col-sm-4 col-xs-12">
-          <%= link_to tutor_profile_path(:id => tutor_profile.id, :similar_profiles => @all_profiles-[tutor_profile.id], :search_levels => @search_levels, :search_subject => @search_subject) do %>
+      <div class="profilebox">
+         <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">         
             <div class="round-avatar" style = 'background-image: url(<%= tutor_profile.image.url(:small) rescue "/assets/default.jpg" %>); background-size: 120px; margin-left:auto; margin-right:auto;'></div>
-          <% end %>
+           <center>
+          <h4><%= "#{tutor_profile.user.first_name}" %></h4>
+          <h4><%= [tutor_profile.country,tutor_profile.location_two].join(" | ") %></h4>
+           </center>
           <% if tutor_profile.user==current_user %>
           <%= link_to t('Destroy'), tutor_profile, style: "text-align:center", class: "linkbutton", method: :delete, data: { confirm: 'Are you sure?' } %>
           <% end %>
         </div>
-        <div class="col-md-6 col-sm-8 col-xs-12">
-          <%= link_to tutor_profile_path(:id => tutor_profile.id, :similar_profiles => @all_profiles-[tutor_profile.id], :search_levels => @search_levels, :search_subject => @search_subject) do %>
-          <h3><%= "#{tutor_profile.user.first_name}" %></h3>
-          <p>
-            <%= t('University') %>/<%= t('Degree Subject') %>: <%= tutor_profile.university %>/ <%= tutor_profile.tutor_degree_subjects.first.degree_subject.capitalize unless tutor_profile.tutor_degree_subjects.blank?  %><br> 
-            <%= t('Within China') %>: <%= [tutor_profile.location_city,tutor_profile.location].join(" | ") %> <br>
-            <%= t('Outside China') %>: <%= [tutor_profile.location_two,tutor_profile.country].join(" | ") %><br>
-            <%= t('Curriculum') %>:<% lws = tutor_profile.levelwise_subjects %>
-             <% if lws %>
-            <% lws.each do |k,v| %>
-              <%= "#{k},".html_safe unless v.blank? %>
-            <% end %>
-          <% end %>
-            <br>
-            <%= t('Teaching Subjects') %>: <%= tutor_profile.tutor_teaching_subjects.pluck(:teaching_subject).map { |ts| ts.capitalize}.join(", ") %>
-          </p>
-          <p style="font-size:14px;"><%= truncate(tutor_profile.about_myself, :length => 120) %></p>
-          <div class="truncate"></div>
-          <% end %>
+        <div class="col-md-8 col-sm-8 col-xs-12">       
+          <h4>
+           <div class="row">
+                <div class="col-md-3">
+                   <%= t('Tuition Subject') %>
+                </div>
+                <div class="col-md-9">
+                   <%= tutor_profile.tutor_degree_subjects.first.degree_subject.capitalize unless tutor_profile.tutor_degree_subjects.blank?  %> (母语）| <%= tutor_profile.tutor_teaching_subjects.pluck(:teaching_subject).map { |ts| ts.capitalize}.join("| ") %>
+                </div>
+           </div>
+             <br>
+           <div class="row">
+                <div class="col-md-3">
+                   <%= t('Target University') %>
+                </div>
+                <div class="col-md-9">
+                   <%= tutor_profile.university %>
+                </div>
+           </div>    
+             <br>
+           <div class="row">
+                <div class="col-md-3">
+                   Hobby
+                </div>
+                <div class="col-md-9">
+                   <%= tutor_profile.hobby %>
+                </div>
+           </div>    
+            <Br>
+           <div class="row">
+                <div class="col-md-3">
+                   Contact Details
+                </div>
+              <% if tutor_profile.wechat.present? %> 
+                <div class="col-md-3">            
+                   <img src="http://7xkbd8.com1.z0.glb.clouddn.com/pageswebwxgetmsgimg%20(1).jpg" style="float:left" class="img-circle">&nbsp;&nbsp;<%= tutor_profile.wechat %></p1>
+                </div>
+              <% end %>
+              <% if tutor_profile.line.present? %> 
+                <div class="col-md-3">
+                   <img src="http://7xkbd8.com1.z0.glb.clouddn.com/pageswebwxgetmsgimg%20(2).jpg" style="float:left" class="img-circle">&nbsp;&nbsp;<%= tutor_profile.line %>
+                </div>
+                <% end %>
+              <% if tutor_profile.skype.present? %> 
+                <div class="col-md-3">
+                   <img src="http://7xkbd8.com1.z0.glb.clouddn.com/pageswebwxgetmsgimg.jpg" style="float:left" class="img-circle">&nbsp;&nbsp;<%= tutor_profile.skype %>
+                </div>
+              <% end %>
+           </div>    
+           </h4>          
         </div>                            
       </div>
+     </div>
+     <div class="row" style="background: #f5f5f5; margin-right: 10px; margin-left:1px; border-radius:5px;border-top: 2px solid #E5E5E5">
+        <p style="font-size:18px;text-align:center;padding-top:5px">"<%= truncate(tutor_profile.about_myself, :length => 120) %>"</p>
+     </div>
     <% end %>
     <div class="float-rht">
       <%= will_paginate @tutor_profiles, renderer: BootstrapPagination::Rails %>
