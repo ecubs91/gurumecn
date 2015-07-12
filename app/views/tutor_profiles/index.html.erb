@@ -15,16 +15,6 @@
         </div>  
         <br>
         <div class="row">
-          <div class="col-lg-10">
-            <%= label_tag t('Tuition Subject') %>
-             <ul class="styled-select">             
-                <%= select_tag :search, options_for_select(@all_tutors.map {|tt| [tt.split.map{ |w| ['and','or','of'].include?(w) ? w : w.capitalize}.join(' '),tt]}.insert(0, [t('Subject'),nil])),  :style=>"width:100%;", class: "styled-select-box" %>                   
-             </ul>            
-          </div>
-        </div>
-        <br>
-        
-        <div class="row">
           <div class="col-lg-10"  style="margin-top: 10px;">
             <%= label_tag t('Location') %>            
             <%= select_tag :search_country, options_for_select([[t('Choose Country'),""]]+@countries.pluck(:name)), :class => "form-control", :onchange=>"get_country_set_city(this.value)" %>
@@ -37,32 +27,6 @@
             </div>
           </div>
         </div>
-        <br>
-        <div class="row">
-          <div class="col-lg-10">
-            <div onclick="open">
-              <h5><%= t('University Admissions') %></h5>
-            </div>
-            <div id="universityAdmissionLevels">
-              <!---------------University level---------------->
-                <% Level.university_admission_levels.each do |ual| %>
-                  <%= check_box_tag "level[]", ual %> <%= ual %><br>
-                <% end %>
-              <!---------------/University level---------------->
-            </div>
-            <div id="examPreparation">
-              <h5><%= t('Exam Preparation') %></h5>
-            </div>
-            <div id="examPreparationLevel">
-              <!---------------Exam Preparation---------------->
-                <% Level.exam_preparation_levels.each do |epl| %>
-                  <%= check_box_tag "level[]", epl %> <%= epl %><br>
-                <% end %>
-              <!---------------/Exam Preparation---------------->
-            </div>
-          </div>
-        </div>
-              
         <br>
         <div class="row">
           <div class="col-lg-10">

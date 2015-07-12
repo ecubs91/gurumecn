@@ -1,4 +1,5 @@
 <div class="jumbotron index">
+   <br><br>
   <div class="row">
     <div class="col-md-3 col-sm-2 col-xs-12">
     </div>
@@ -8,9 +9,9 @@
           <div class="col-md-6 col-sm-6">            
             <%= form_tag search_tutor_profiles_path, :method=> :get, :class=> "center" do %>
              <ul class="styled-select-index">
-            <%= select_tag :search_university, options_for_select([["",""]]+University.all.pluck(:name),(@tutor_profile.university rescue nil)), :include_blank => true, :id => "university", :class => "styled-select-box", placeholder: t('Target University'), style: "width:80%", placeholder: "Select the language you wish to learn" %> <span class="glyphicon glyphicon-search" style="font-size:25px;color:#ea6779;margin-top:5px"></span>
+            <%= select_tag :search_university, options_for_select([["",""]]+University.all.pluck(:name),(@tutor_profile.university rescue nil)), :include_blank => true, :id => "university", :class => "styled-select-box", placeholder: t('Target University'), style: "width:65%", placeholder: "Select the language you wish to learn" %> <span class="glyphicon glyphicon-search" style="font-size:25px;color:#ea6779;margin-top:5px"></span> &nbsp;&nbsp;<%= submit_tag "Search", :name => nil, :class=> "indexsearchbutton" %>
              </ul>
-              <%= submit_tag "Search", :name => nil, :class=> "indexsearchbutton" %>
+              
           </div>
       </div>              
       
